@@ -14,6 +14,9 @@ HISTSIZE=100000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+# cd into directory when typing it
+shopt -s autocd
+
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
@@ -32,6 +35,13 @@ fi
   # ;;
 #esac
 
+function parse_git_branch () {
+	#git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+	echo " "`git rev-parse --symbolic-full-name --abbrev-ref HEAD`| grep -v fatal | grep -v master$
+	#ref=$(git-symbolic-ref HEAD 2> /dev/null) || return
+	#echo "("${ref#refs/heads/}")"
+}
+
 #PS1='[\t \u@\H \W]\$ '
 
 #TEAL="\033[0;36m\]"
@@ -39,7 +49,7 @@ fi
 #NONE="\033[0m\]"
 #TIME1="\t"
 #TIME2=${TIME1:0:2}
-PS1="\[\033[0;96m\][\[\033[0m\]\[\033[0;1m\]\u:\w\[\033[0;96m\]]\$\[\033[0m\] "
+export PS1="\[\033[0;96m\][\[\033[0m\]\[\033[0;1m\]\u:\w\[\033[0;96m\]]\$(parse_git_branch)\$\[\033[0m\] "
 
 # Comment in the above and uncomment this below for a color prompt
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
