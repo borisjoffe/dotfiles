@@ -3,6 +3,8 @@ bind k focus up
 bind t focus top
 bind b focus bottom
 
+shell /bin/zsh
+
 hardstatus on
 hardstatus alwayslastline
 hardstatus string "%H %u %{= g} %{= w}%-w%{=r}%n %t%{-}%+W"
