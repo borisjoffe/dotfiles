@@ -1,0 +1,18 @@
+
+screen -t "git"
+stuff "git status"
+screen -t "edit front"
+stuff "vi "
+screen -t "edit back"
+stuff "vi "
+
+screen -t "ipython"
+stuff "ipython"
+
+screen -t "RUN="
+
+screen -t "MAN"
+screen -t "files"
+stuff "ls -l"
+
+source "~/.screenrc"
