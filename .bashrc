@@ -104,9 +104,14 @@ alias d='cd /'
 alias disku='du -sh * | sort -rn | head'
 #alias go='gnome-open $1'
 
+alias bitcoin-qt='bitcoin-qt -datadir=/data/bitcoin'
+
 alias install="sudo apt-get install"
 alias remove="sudo apt-get remove"
 alias search="apt-cache search"
+
+# remap 8/* key to CAPS LOCK while disabling CAPS LOCK
+$(sh /opt/enable-eight-key.sh)
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -115,8 +120,9 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-PATH=$PATH:/home/boris/bin:/data/android-sdk-linux/tools:/data/android-sdk-linux/platform-tools
-export PATH
+
+export PATH="$PATH:/home/boris/bin:/data/android-sdk-linux/tools:/data/android-sdk-linux/platform-tools:/usr/local/heroku/bin:/home/boris/code/tizen-sdk/tools"
+export TIZEN_SDK_HOME=~/code/tizen-sdk
 
 TZ="America/Los_Angeles"
 export TZ
@@ -131,4 +137,4 @@ crypt () {
 }
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+### Removed and added above
