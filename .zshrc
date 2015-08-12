@@ -17,9 +17,13 @@ bindkey "5D" backward-word
 bindkey "5C" forward-word
 
 # ALIASES
+alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -CF'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 alias rm='rm -i'
 alias mv='mv -iv'
