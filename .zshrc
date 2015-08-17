@@ -97,7 +97,7 @@ function __prompt_git() {
                   echo "[$br$top]"
 }
 
-export PATH="$PATH:/home/boris/bin"
+export PATH="$PATH:/home/boris/bin:/opt/clojurescript/bin"
 export EDITOR=vim
 # add android tools later: /data/android/android-sdk-linux/tools:/data/android/android-sdk-linux/platform-tools
 # don't use tizen or heroku anymore: /usr/local/heroku/bin:/home/boris/code/tizen-sdk/tools
