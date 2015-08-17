@@ -76,6 +76,9 @@ alias ff='runsilent firefox'
 alias chrome='runsilent chromium'
 alias opera='runsilent opera'
 
+alias runxlock='runsilent xautolock -time 5 -locker slock'
+alias lock='xautolock -locknow'
+
 # Haskell flags
 alias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
 
