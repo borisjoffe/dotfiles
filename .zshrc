@@ -43,12 +43,15 @@ alias cp='cp -i'
 alias cppreserve='cp -i --preserve=mode,ownership,timestamps,links'
 
 alias grep='grep --color'
+alias grepi='grep --color -i'
 alias grep2='grep --color -d skip'
 
 # http://zsh.sourceforge.net/Intro/intro_8.html
 alias -g G='| grep'
-alias -g G='| less'
+alias -g L='| less'
 
+alias df='df -h'
+alias psg='ps aux| grep'
 alias wifi='sudo iw dev wlan0'
 alias e='vim'
 alias vi='vim'
@@ -56,6 +59,7 @@ alias g='git'
 
 alias pacman='pacmatic'
 alias pacmann='pacmatic --needed'
+alias pacaurn='pacaur --needed'
 
 # download this page and all pages one level down including all resources (do not make host directories)
 alias downloadPageOneLevel='wget -nH -k -p -r -l 1'
