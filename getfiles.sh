@@ -1,6 +1,6 @@
 #!/bin/bash
-cp ~/.bashrc .
-cp ~/.screenrc* .
-cp ~/.vimrc .
+
+# temporarily removed bashrc - restore from backup later
+cp ~/.{bashrc,screenrc,vimrc,zshrc,tmux.conf} .
+
 #cp -R ~/.vim/ .
-cp ~/.zshrc .
