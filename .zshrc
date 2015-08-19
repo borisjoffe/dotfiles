@@ -194,3 +194,6 @@ export LESS_TERMCAP_so=$(printf '\e[1;44;1m')
 #source /home/boris/run-gpg
 
 #eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
+
+# OPAM configuration
+. /home/boris/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
