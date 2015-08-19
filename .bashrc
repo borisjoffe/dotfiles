@@ -8,7 +8,7 @@
 # don't put duplicate lines in the history. See bash(1) for more options
 export HISTCONTROL=ignoredups
 HISTFILESIZE=10000000
-HISTSIZE=100000
+HISTSIZE=10000000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -104,11 +104,25 @@ alias d='cd /'
 alias disku='du -sh * | sort -rn | head'
 #alias go='gnome-open $1'
 
-alias bitcoin-qt='bitcoin-qt -datadir=/data/bitcoin'
+alias wifi='sudo iw dev wlan0'
+alias wifiup='sudo ip link set wlan0 up'
 
-alias install="sudo apt-get install"
-alias remove="sudo apt-get remove"
-alias search="apt-cache search"
+alias grep='grep --color'
+
+alias pacman='pacmatic'
+alias pacmann='pacmatic --needed'
+alias pacaurn='pacaur --needed'
+
+alias lm='lastmod.sh'
+alias rr='source ~/.bashrc'
+alias rh='rehash'
+
+
+#alias bitcoin-qt='bitcoin-qt -datadir=/data/bitcoin'
+
+#alias install="sudo apt-get install"
+#alias remove="sudo apt-get remove"
+#alias search="apt-cache search"
 
 # remap 8/* key to CAPS LOCK while disabling CAPS LOCK
 $(sh /opt/enable-eight-key.sh)
@@ -121,8 +135,9 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 
-export PATH="$PATH:/home/boris/bin:/data/android-sdk-linux/tools:/data/android-sdk-linux/platform-tools:/usr/local/heroku/bin:/home/boris/code/tizen-sdk/tools"
-export TIZEN_SDK_HOME=~/code/tizen-sdk
+export PATH="$PATH:/home/boris/bin:/opt/clojurescript/bin"
+#export PATH="$PATH:/home/boris/bin:/data/android-sdk-linux/tools:/data/android-sdk-linux/platform-tools:/usr/local/heroku/bin:/home/boris/code/tizen-sdk/tools"
+#export TIZEN_SDK_HOME=~/code/tizen-sdk
 
 TZ="America/Los_Angeles"
 export TZ
@@ -135,6 +150,3 @@ encrypt () {
 crypt () {
 	gpg --no-options "$1"
 }
-
-### Added by the Heroku Toolbelt
-### Removed and added above
