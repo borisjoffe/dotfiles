@@ -2,7 +2,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
-setopt appendhistory autocd
+setopt appendhistory autocd complete_aliases
 unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
@@ -28,6 +28,8 @@ setopt PUSHD_TO_HOME
 bindkey "5D" backward-word
 bindkey "5C" forward-word
 
+# TODO: consolidate duplicate lines with bashrc
+
 # ALIASES
 alias ls='ls --color=auto'
 alias ll='ls -lh'
@@ -40,7 +42,9 @@ alias ....='cd ../../..'
 alias rm='rm -i'
 alias mv='mv -iv'
 alias cp='cp -i'
-alias cppreserve='cp -i --preserve=mode,ownership,timestamps,links'
+alias cppreserve='cp -r -i --preserve=mode,ownership,timestamps,links'
+alias cppreservebackup='cp -r -i --backup=numbered --preserve=mode,ownership,timestamps,links'
+alias cppreservebackupsrc='cp -r -i --backup=numbered -f --preserve=mode,ownership,timestamps,links'
 
 alias grep='grep --color'
 alias grepi='grep --color -i'
@@ -48,18 +52,22 @@ alias grep2='grep --color -d skip'
 
 # http://zsh.sourceforge.net/Intro/intro_8.html
 alias -g G='| grep'
+alias -g Gi='| grep -i'
 alias -g L='| less'
 
 alias df='df -h'
 alias psg='ps aux| grep'
-alias wifi='sudo iw dev wlan0'
 alias e='vim'
 alias vi='vim'
 alias g='git'
 
+alias wifi='sudo iw dev wlan0'
+alias wifiup='sudo ip link set wlan0 up'
+
 alias pacman='pacmatic'
 alias pacmann='pacmatic --needed'
 alias pacaurn='pacaur --needed'
+alias rh='rehash'
 
 # download this page and all pages one level down including all resources (do not make host directories)
 alias downloadPageOneLevel='wget -nH -k -p -r -l 1'
@@ -178,3 +186,11 @@ export LESS_TERMCAP_mb=$(printf '\e[1;32m')
 export LESS_TERMCAP_md=$(printf '\e[1;34m')
 export LESS_TERMCAP_us=$(printf '\e[1;32m')
 export LESS_TERMCAP_so=$(printf '\e[1;44;1m')
+
+
+#eval $(ssh-agent)
+#ssh-add ~/.ssh/id_rsa
+#ssh-add ~/.ssh/*
+#source /home/boris/run-gpg
+
+#eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
