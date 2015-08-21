@@ -182,49 +182,49 @@
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="C-A-Right">
       <action name="GoToDesktop">
         <to>right</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="C-A-Up">
       <action name="GoToDesktop">
         <to>up</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="C-A-Down">
       <action name="GoToDesktop">
         <to>down</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Left">
+    <keybind key="C-S-A-Left">
       <action name="SendToDesktop">
         <to>left</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Right">
+    <keybind key="C-S-A-Right">
       <action name="SendToDesktop">
         <to>right</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Up">
+    <keybind key="C-S-A-Up">
       <action name="SendToDesktop">
         <to>up</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Down">
+    <keybind key="C-S-A-Down">
       <action name="SendToDesktop">
         <to>down</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="W-F1">
@@ -254,6 +254,12 @@
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
+    <keybind key="W-Down">
+      <action name="Iconify"/>
+	</keybind>
+    <keybind key="W-Up">
+      <action name="ToggleMaximizeFull"/>
+	</keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
@@ -322,7 +328,17 @@
           <enabled>true</enabled>
           <name>Konqueror</name>
         </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
+        <command>urxvt</command>
+      </action>
+    </keybind>
+    <keybind key="W-t">
+      <action name="Execute">
+        <command>urxvt</command>
+      </action>
+    </keybind>
+    <keybind key="W-f">
+      <action name="Execute">
+        <command>pcmanfm</command>
       </action>
     </keybind>
   </keyboard>
