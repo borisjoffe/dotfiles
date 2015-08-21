@@ -179,12 +179,21 @@ alias cbhs="cat $HISTFILE | tail -n 1 | cb"
 
 
 export LESS=-R
+
+# turn off bold/blink/standout
 export LESS_TERMCAP_me=$(printf '\e[0m')
+# stop standout
 export LESS_TERMCAP_se=$(printf '\e[0m')
+# stop underline
 export LESS_TERMCAP_ue=$(printf '\e[0m')
+# blink
 export LESS_TERMCAP_mb=$(printf '\e[1;32m')
-export LESS_TERMCAP_md=$(printf '\e[1;34m')
-export LESS_TERMCAP_us=$(printf '\e[1;32m')
+# bold
+#export LESS_TERMCAP_md=$(printf '\e[1;34m')
+export LESS_TERMCAP_md=$(printf '\e[1;36m')
+# underline
+#export LESS_TERMCAP_us=$(printf '\e[1;32m')
+# standout
 export LESS_TERMCAP_so=$(printf '\e[1;44;1m')
 
 
