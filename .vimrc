@@ -51,6 +51,10 @@ au BufWinEnter * match ExtraWhitespace /\s\+$/
 
 " ==== FILE TYPE SPECIFIC BEHAVIOR ====
 
+autocmd BufRead,BufNewFile sl5x5.txt setfiletype workout
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+autocmd BufWritePost *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
+
 " HTML
 au FileType python setlocal expandtab
 au FileType haskell setlocal expandtab
