@@ -68,9 +68,10 @@ au FileType haskell setlocal expandtab
 "autocmd BufWritePost *.jade :silent !jade -P <afile> > /dev/null
 "autocmd BufWritePost *.styl :silent !stylus <afile> > /dev/null
 
-autocmd BufRead,BufNewFile sl5x5.txt setfiletype workout
-autocmd BufRead,BufNewFile *.es6 setfiletype javascript
-
+" Spellcheck
+autocmd FileType text,markdown,asciidoc setlocal spell
+autocmd FileType html,jade setlocal spell
+autocmd FileType tex setlocal spell
 
 " copy/paste
 command -range Cz :silent :<line1>,<line2>w !xsel -i -b
