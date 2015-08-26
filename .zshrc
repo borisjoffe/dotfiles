@@ -31,6 +31,8 @@ bindkey "5C" forward-word
 # TODO: consolidate duplicate lines with bashrc
 
 # ALIASES
+alias c='clear'
+alias r='reset'
 alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias la='ls -A'
@@ -56,6 +58,7 @@ alias -g Gi='| grep -i'
 alias -g L='| less'
 
 alias df='df -h'
+alias free='free -h'
 alias psg='ps aux| grep'
 alias e='vim'
 alias vi='vim'
@@ -83,6 +86,7 @@ alias fm='runsilent pcmanfm'
 alias ff='runsilent firefox'
 alias chrome='runsilent chromium'
 alias opera='runsilent opera'
+alias panel='runsilent lxpanel'
 
 alias runxlock='runsilent xautolock -time 5 -locker slock'
 alias lock='xautolock -locknow'
