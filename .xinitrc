@@ -54,8 +54,13 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 
-setxkbmap dvorak
-. $HOME/bin/enable-eight-key.sh
-eval $(keychain --eval --agents ssh -Q --quiet $HOME/.ssh/id_rsa)
+setxkbmap dvorak &
+. $HOME/bin/enable-eight-key.sh &
+eval $(keychain --eval --agents ssh -Q --quiet $HOME/.ssh/id_rsa) &
+xautolock -detectsleep -nowlocker slock \
+		-time 5 -locker slock \
+		-notify 300 -notifier "xset dpms force off" \
+		-killtime 20 -killer "systemctl suspend" &
 
-exec openbox
+openbox &
+exec urxvt
