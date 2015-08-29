@@ -88,7 +88,7 @@ alias chrome='runsilent chromium'
 alias opera='runsilent opera'
 alias panel='runsilent lxpanel'
 
-alias runxlock='runsilent xautolock -time 5 -locker slock'
+alias runxlock='nohup xautolock -detectsleep -nowlocker slock -time 10 -locker slock -notify 600 -notifier "xset dpms force off" -killtime 20 -killer "systemctl suspend" &'
 alias lock='xautolock -locknow'
 
 # Haskell flags
