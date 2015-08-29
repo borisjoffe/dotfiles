@@ -1,4 +1,5 @@
 "set clipboard=unnamed		"normal keyboard behavior
+set term=xterm " fix home and end keys
 
 set hlsearch
 set showmatch
@@ -72,6 +73,7 @@ au FileType haskell setlocal expandtab
 autocmd FileType text,markdown,asciidoc setlocal spell
 autocmd FileType html,jade setlocal spell
 autocmd FileType tex setlocal spell
+autocmd BufRead sl5x5.txt setlocal spell
 
 " copy/paste
 command -range Cz :silent :<line1>,<line2>w !xsel -i -b
