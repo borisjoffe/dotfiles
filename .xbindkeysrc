@@ -40,5 +40,10 @@
     m:0x40 + c:33
     Mod4 + l 
 
+#Suspend (with locking)
+"xautolock -locknow; sleep 1; systemctl suspend"
+    m:0x40 + c:47
+    Mod4 + s 
+
 #
 # End of xbindkeys configuration
