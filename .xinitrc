@@ -58,9 +58,9 @@ setxkbmap dvorak &
 . $HOME/bin/enable-eight-key.sh &
 eval $(keychain --eval --agents ssh -Q --quiet $HOME/.ssh/id_rsa) &
 xautolock -detectsleep -nowlocker slock \
-		-time 5 -locker slock \
-		-notify 300 -notifier "xset dpms force off" \
-		-killtime 20 -killer "systemctl suspend" &
+		-time 10 -locker slock \                    # minutes before locking
+		-notify 5 -notifier "xset dpms force off" \ # seconds to turn off screen
+		-killtime 20 -killer "systemctl suspend" &  # minutes after locking before suspending
 
 openbox &
 exec urxvt
