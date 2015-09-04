@@ -84,7 +84,7 @@ alias plates='python2.7 ~/bin/plates'	# update code for python3 later
 #alias bitcoin-qt='bitcoin-qt -datadir=/data/bitcoin'
 alias term='runsilent urxvt'
 alias fm='runsilent pcmanfm'
-alias ff='runsilent firefox'
+alias ff='runsilent firefox -no-remote'
 alias chrome='runsilent chromium'
 alias opera='runsilent opera'
 alias panel='runsilent lxpanel'

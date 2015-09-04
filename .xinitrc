@@ -63,4 +63,5 @@ xautolock -detectsleep -nowlocker slock \
 		-killtime 20 -killer "systemctl suspend" &  # minutes after locking before suspending
 
 openbox &
+redshift &
 exec urxvt
