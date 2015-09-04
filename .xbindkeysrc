@@ -45,5 +45,20 @@
     m:0x40 + c:47
     Mod4 + s 
 
+#Mute volume
+"amixer -c 0 set Master toggle"
+    m:0x0 + c:121
+    XF86AudioMute 
+
+#Raise volume
+"amixer -c 0 set Master 5+"
+    m:0x0 + c:123
+    XF86AudioRaiseVolume 
+
+#Lower volume
+"amixer -c 0 set Master 5-"
+    m:0x0 + c:122
+    XF86AudioLowerVolume 
+
 #
 # End of xbindkeys configuration
