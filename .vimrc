@@ -54,7 +54,7 @@ au BufWinEnter * match ExtraWhitespace /\s\+$/
 
 autocmd BufRead,BufNewFile sl5x5.txt setfiletype workout
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
-autocmd BufWritePost *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
+autocmd BufRead,BufNewFile *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
 
 " HTML
 au FileType python setlocal expandtab
