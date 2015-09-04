@@ -7,7 +7,7 @@ unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/boris/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit && compinit
 # End of lines added by compinstall
@@ -110,10 +110,10 @@ function __prompt_git() {
                   echo "[$br$top]"
 }
 
-export PATH="$PATH:/home/boris/bin:/opt/clojurescript/bin"
+export PATH="$PATH:$HOME/bin:/opt/clojurescript/bin:$HOME/.gem/ruby/2.2.0/bin"
 export EDITOR=vim
 # add android tools later: /data/android/android-sdk-linux/tools:/data/android/android-sdk-linux/platform-tools
-# don't use tizen or heroku anymore: /usr/local/heroku/bin:/home/boris/code/tizen-sdk/tools
+# don't use tizen or heroku anymore: /usr/local/heroku/bin:$HOME/code/tizen-sdk/tools
 # export TIZEN_SDK_HOME=~/code/tizen-sdk
 
 autoload -U colors && colors
@@ -205,9 +205,9 @@ export LESS_TERMCAP_so=$(printf '\e[1;44;1m')
 #eval $(ssh-agent)
 #ssh-add ~/.ssh/id_rsa
 #ssh-add ~/.ssh/*
-#source /home/boris/run-gpg
+#source $HOME/run-gpg
 
 #eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
 
 # OPAM configuration
-. /home/boris/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
