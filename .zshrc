@@ -62,6 +62,8 @@ alias -g L='| less'
 alias df='df -h'
 alias free='free -h'
 alias psg='ps aux| grep -i'
+alias -g FDATE='date +%F' # date in the format YYYY-MM-DD
+
 alias e='vim'
 alias vi='vim'
 alias g='git'
