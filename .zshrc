@@ -41,6 +41,7 @@ alias lsg='ll | grep -i'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias po='popd'
 
 alias rm='rm -i'
 alias mv='mv -iv'
