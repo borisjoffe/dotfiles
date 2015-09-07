@@ -89,3 +89,10 @@ command -range Pv :silent :r !xsel -o -s
 cabbrev pz Pz
 cabbrev px Px
 cabbrev pv Pv
+
+" http://vim.wikia.com/wiki/Avoiding_the_%22Hit_ENTER_to_continue%22_prompts
+"command! -nargs=1 Silent
+"\ | execute ':silent !'.<q-args>
+"\ | execute ':redraw!'
+
+command! Adoc :silent execute "!asciidoc %" | redraw!
