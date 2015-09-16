@@ -91,6 +91,7 @@ alias fm='runsilent pcmanfm'
 alias ff='runsilent firefox -no-remote'
 alias chrome='runsilent chromium'
 alias opera='runsilent opera'
+alias rss='runsilent rssowl'
 alias panel='runsilent lxpanel'
 
 alias runxlock='nohup xautolock -detectsleep -nowlocker slock -time 10 -locker slock -notify 5 -notifier "xset dpms force off" -killtime 20 -killer "systemctl suspend" &'
@@ -114,7 +115,7 @@ function __prompt_git() {
                   echo "[$br$top]"
 }
 
-export PATH="$PATH:$HOME/bin:/opt/clojurescript/bin:$HOME/.gem/ruby/2.2.0/bin"
+export PATH="$PATH:$HOME/bin:$HOME/.gem/ruby/2.2.0/bin"
 export EDITOR=vim
 # add android tools later: /data/android/android-sdk-linux/tools:/data/android/android-sdk-linux/platform-tools
 # don't use tizen or heroku anymore: /usr/local/heroku/bin:$HOME/code/tizen-sdk/tools
