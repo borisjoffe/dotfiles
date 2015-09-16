@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Onyx-Citrus</name>
+    <name>Afterpiece</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -600,7 +600,7 @@
         <action name="Close"/>
       </mousebind>
     </context>
-	<!--
+    <!--
     <context name="Desktop">
       <mousebind button="Up" action="Click">
         <action name="GoToDesktop">
@@ -655,7 +655,7 @@
         </action>
       </mousebind>
     </context>
-	<!--
+    <!--
     <context name="MoveResize">
       <mousebind button="Up" action="Click">
         <action name="GoToDesktop">
