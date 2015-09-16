@@ -76,6 +76,7 @@ alias pacman='pacmatic'
 alias pacmann='pacmatic --needed'
 alias pacaurn='pacaur --needed'
 alias rh='rehash'
+alias sudo='sudo ' # hack to make aliases work - http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo/22043#22043
 
 # download this page and all pages one level down including all resources (do not make host directories)
 alias downloadPageOneLevel='wget -nH -k -p -r -l 1'
