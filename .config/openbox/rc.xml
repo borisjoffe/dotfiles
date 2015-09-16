@@ -600,6 +600,7 @@
         <action name="Close"/>
       </mousebind>
     </context>
+	<!--
     <context name="Desktop">
       <mousebind button="Up" action="Click">
         <action name="GoToDesktop">
@@ -640,6 +641,7 @@
         <action name="Raise"/>
       </mousebind>
     </context>
+	-->
     <context name="Root">
       <!-- Menus -->
       <mousebind button="Middle" action="Press">
@@ -653,6 +655,7 @@
         </action>
       </mousebind>
     </context>
+	<!--
     <context name="MoveResize">
       <mousebind button="Up" action="Click">
         <action name="GoToDesktop">
@@ -675,6 +678,7 @@
         </action>
       </mousebind>
     </context>
+	-->
   </mouse>
   <menu>
     <!-- You can specify more than one menu file in here and they are all loaded,
