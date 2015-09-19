@@ -54,6 +54,14 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 
+# Solarized theme - used for zsh, tmux, vim
+export SOLARIZED=1
+solarized=$HOME/.Xresources.solarized
+if [ $SOLARIZED ] && [ -f "$solarized" ]; then
+    xrdb -override "$solarized"
+fi
+
+
 setxkbmap dvorak &
 . $HOME/bin/enable-eight-key.sh &
 eval $(keychain --eval --agents ssh -Q --quiet $HOME/.ssh/id_rsa) &
