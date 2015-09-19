@@ -96,6 +96,10 @@ alias rss='runsilent rssowl'
 alias panel='runsilent lxpanel'
 alias keepass='runsilent keepassx'
 
+if [ "$SOLARIZED" -eq "1" ]; then
+	alias tmux='tmux -f .tmux-solarized-dark.conf'
+fi
+
 alias runxlock='nohup xautolock -detectsleep -nowlocker slock -time 10 -locker slock -notify 5 -notifier "xset dpms force off" -killtime 20 -killer "systemctl suspend" &'
 alias lock='xautolock -locknow'
 
