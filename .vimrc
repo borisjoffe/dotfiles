@@ -1,8 +1,7 @@
 "set clipboard=unnamed		"normal keyboard behavior
-set term=xterm " fix home and end keys
-
 set hlsearch
 set showmatch
+set showcmd
 
 set tabstop=4
 set shiftwidth=4
@@ -31,6 +30,18 @@ execute pathogen#helptags()
 " filetype plugin on
 "filetype plugin indent on
 syntax on
+set term=xterm-256color " fix home and end keys and colors
+set background=dark
+
+
+"let g:solarized_termcolors=256
+"let g:solarized_termtrans=1
+let g:is_solarized=$SOLARIZED
+if $SOLARIZED == 1
+	colorscheme solarized
+else
+	colorscheme elflord
+endif
 
 "set omnifunc=syntaxcomplete#Complete
 
