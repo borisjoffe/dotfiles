@@ -102,6 +102,7 @@ fi
 
 alias runxlock='xautolock-start.sh'
 alias lock='xautolock -locknow'
+alias kb='setxkbmap dvorak; enable-eight-key.sh'
 
 # Haskell flags
 alias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
