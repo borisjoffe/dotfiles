@@ -21,6 +21,11 @@ set showmode
 set foldmethod=indent
 set foldlevel=99
 
+" https://github.com/dag/vim-fish
+if &shell =~# 'fish$'
+	set shell=zsh
+endif
+
 filetype off
 execute pathogen#infect()
 execute pathogen#helptags()
@@ -31,6 +36,7 @@ execute pathogen#helptags()
 "filetype plugin indent on
 syntax on
 set term=xterm-256color " fix home and end keys and colors
+"set t_ut=    " Background Color Erase
 set background=dark
 
 
