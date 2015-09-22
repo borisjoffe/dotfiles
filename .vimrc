@@ -23,7 +23,7 @@ set foldlevel=99
 
 " https://github.com/dag/vim-fish
 if &shell =~# 'fish$'
-	set shell=zsh
+	set shell=bash
 endif
 
 filetype off
