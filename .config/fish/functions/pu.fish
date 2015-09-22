@@ -1,3 +1,3 @@
-function cd
+function pu
 	pushd $argv;
 end
