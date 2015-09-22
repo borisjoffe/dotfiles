@@ -61,11 +61,9 @@ if [ $SOLARIZED ] && [ -f "$solarized" ]; then
     xrdb -override "$solarized"
 fi
 
-
-setxkbmap dvorak &
-. $HOME/bin/enable-eight-key.sh &
-eval $(keychain --eval --agents ssh -Q --quiet $HOME/.ssh/id_rsa) &
-. $HOME/bin/xautolock-start.sh &
+. $HOME/bin/keyboard-init.sh &
+. $HOME/bin/keychain-init.sh &
+. $HOME/bin/xautolock-init.sh &
 
 openbox &
 lxpanel &
