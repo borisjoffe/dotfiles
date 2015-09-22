@@ -68,6 +68,7 @@ alias -g D='date +%F' # date in the format YYYY-MM-DD
 alias e='vim'
 alias vi='vim'
 alias g='git'
+alias f='fish'
 
 alias wifi='sudo iw dev wlan0'
 alias wifiup='sudo ip link set wlan0 up'
@@ -100,7 +101,7 @@ if [ "$SOLARIZED" -eq "1" ]; then
 	alias tmux='tmux -f .tmux-solarized-dark.conf'
 fi
 
-alias runxlock='xautolock-start.sh'
+alias runxlock='xautolock-init.sh'
 alias lock='xautolock -locknow'
 alias kb='setxkbmap dvorak; enable-eight-key.sh'
 
