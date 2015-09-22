@@ -150,3 +150,4 @@ encrypt () {
 crypt () {
 	gpg --no-options "$1"
 }
+source /usr/share/nvm/init-nvm.sh
