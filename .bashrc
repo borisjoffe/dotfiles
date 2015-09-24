@@ -125,7 +125,7 @@ alias rh='rehash'
 #alias search="apt-cache search"
 
 # remap 8/* key to CAPS LOCK while disabling CAPS LOCK
-$(sh /opt/enable-eight-key.sh)
+source $HOME/bin/enable-eight-key.sh
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
