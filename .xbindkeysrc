@@ -60,11 +60,6 @@
     m:0x0 + c:122
     XF86AudioLowerVolume 
 
-#Screenshot focused window
-"scrot --focused"
-    m:0x8 + c:107
-    Alt + Print 
-
 #Screenshot Full Screen (Multimonitor)
 "scrot --multidisp"
     m:0x0 + c:107
@@ -74,6 +69,31 @@
 "scrot --select"
     m:0x1 + c:107
     Shift + Print 
+
+#Screenshot focused window
+"scrot --focused"
+    m:0x8 + c:107
+    Alt + Print 
+
+#Terminal
+"urxvt -e fish -i"
+    m:0x40 + c:45
+    Mod4 + t 
+
+#File Manager
+"pcmanfm"
+    m:0x40 + c:29
+    Mod4 + f 
+
+#Leafpad Editor
+"leafpad"
+    m:0x40 + c:46
+    Mod4 + n 
+
+#Launcher
+"urxvt -geometry 60x3 -name 'run' -e fish -i"
+    m:0x40 + c:65
+    Mod4 + space 
 
 #
 # End of xbindkeys configuration

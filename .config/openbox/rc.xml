@@ -322,6 +322,7 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
+	<!--
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
@@ -341,6 +342,7 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
+	-->
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
