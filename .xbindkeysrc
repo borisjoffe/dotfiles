@@ -95,5 +95,55 @@
     m:0x40 + c:65
     Mod4 + space 
 
+#Raise window 1
+"window-raise-toggle.sh 1"
+    m:0x40 + c:10
+    Mod4 + 1 
+
+#Raise window 2
+"window-raise-toggle.sh 2"
+    m:0x40 + c:11
+    Mod4 + 2 
+
+#Raise window 3
+"window-raise-toggle.sh 3"
+    m:0x40 + c:12
+    Mod4 + 3 
+
+#Raise window 4
+"window-raise-toggle.sh 4"
+    m:0x40 + c:13
+    Mod4 + 4 
+
+#Raise window 5
+"window-raise-toggle.sh 5"
+    m:0x40 + c:14
+    Mod4 + 5 
+
+#Raise window 6
+"window-raise-toggle.sh 6"
+    m:0x40 + c:15
+    Mod4 + 6 
+
+#Raise window 7
+"window-raise-toggle.sh 7"
+    m:0x40 + c:16
+    Mod4 + 7 
+
+#Raise window 8
+"window-raise-toggle.sh 8"
+    m:0x40 + c:17
+    Mod4 + 8 
+
+#Raise window 9
+"window-raise-toggle.sh 9"
+    m:0x40 + c:18
+    Mod4 + 9 
+
+#Raise window 10
+"window-raise-toggle.sh 10"
+    m:0x40 + c:19
+    Mod4 + 10 
+
 #
 # End of xbindkeys configuration
