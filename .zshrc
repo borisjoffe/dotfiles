@@ -97,9 +97,7 @@ alias rss='runsilent rssowl'
 alias panel='runsilent lxpanel'
 alias keepass='runsilent keepassx'
 
-if [ "$SOLARIZED" -eq "1" ]; then
-	alias tmux='tmux -f .tmux-solarized-dark.conf'
-fi
+source $HOME/bin/solarized-switch.sh 1
 
 alias runxlock='xautolock-init.sh'
 alias lock='xautolock -locknow'

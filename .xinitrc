@@ -54,13 +54,10 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 
-# Solarized theme - used for zsh, tmux, vim
+# Solarized theme - used for zsh, tmux, vim (1 is dark, 2 is light)
 export SOLARIZED=1
-solarized=$HOME/.Xresources.solarized
-if [ $SOLARIZED ] && [ -f "$solarized" ]; then
-    xrdb -override "$solarized"
-fi
 
+. $HOME/bin/solarized-switch.sh $SOLARIZED &
 . $HOME/bin/keyboard-init.sh &
 . $HOME/bin/keychain-init.sh &
 . $HOME/bin/xautolock-init.sh &

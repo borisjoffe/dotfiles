@@ -39,11 +39,13 @@ set term=xterm-256color " fix home and end keys and colors
 "set t_ut=    " Background Color Erase
 set background=dark
 
-
 "let g:solarized_termcolors=256
 "let g:solarized_termtrans=1
 let g:is_solarized=$SOLARIZED
 if $SOLARIZED == 1
+	colorscheme solarized
+elseif $SOLARIZED == 2
+	set background=light
 	colorscheme solarized
 else
 	colorscheme elflord
