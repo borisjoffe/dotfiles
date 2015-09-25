@@ -1,0 +1,7 @@
+abbr gs 'git status'
+abbr l 'ls -CF'
+abbr grepi 'grep -i'
+abbr ff 'run firefox -no-remote'
+abbr lf 'll -F'
+abbr cam '~/code/ionic-camera/CAM'
+abbr gcia 'git commit --amend'
