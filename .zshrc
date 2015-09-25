@@ -97,7 +97,8 @@ alias rss='runsilent rssowl'
 alias panel='runsilent lxpanel'
 alias keepass='runsilent keepassx'
 
-source $HOME/bin/solarized-switch.sh 1
+alias solarized-switch='source $HOME/bin/solarized-switch.sh'
+source $HOME/bin/solarized-switch.sh $SOLARIZED
 
 alias runxlock='xautolock-init.sh'
 alias lock='xautolock -locknow'
