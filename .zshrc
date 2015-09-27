@@ -122,9 +122,9 @@ function __prompt_git() {
                   echo "[$br$top]"
 }
 
-export PATH="$PATH:$HOME/bin:$HOME/.gem/ruby/2.2.0/bin"
+export PATH="$PATH:$HOME/bin:/data/anaconda3/bin:/data/android/android-sdk-linux/tools:/data/android/android-sdk-linux/platform-tools:$HOME/.gem/ruby/2.2.0/bin"
+export ANDROID_HOME="/data/android/sdk"
 export EDITOR=vim
-# add android tools later: /data/android/android-sdk-linux/tools:/data/android/android-sdk-linux/platform-tools
 # don't use tizen or heroku anymore: /usr/local/heroku/bin:$HOME/code/tizen-sdk/tools
 # export TIZEN_SDK_HOME=~/code/tizen-sdk
 
