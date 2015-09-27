@@ -1,3 +1,5 @@
 function lsg
-	ls | grep -i $argv;
+	set searchTerm (first $argv)
+	set directoryAndArgs (rest $argv)
+	ls $directoryAndArgs | grep -i $searchTerm;
 end
