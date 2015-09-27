@@ -2,6 +2,7 @@
 set hlsearch
 set showmatch
 set showcmd
+set showmode
 
 set tabstop=4
 set shiftwidth=4
@@ -17,7 +18,6 @@ hi SpellBad	term=bold ctermbg=Red ctermfg=Green guibg=Red guifg=White
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
-set showmode
 set foldmethod=indent
 set foldlevel=99
 
@@ -74,7 +74,6 @@ au BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 autocmd BufRead,BufNewFile *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
 
-" HTML
 au FileType python setlocal expandtab
 au FileType haskell setlocal expandtab
 
