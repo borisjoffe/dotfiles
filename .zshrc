@@ -27,6 +27,8 @@ setopt PUSHD_TO_HOME
 # The following lines were added by boris
 bindkey "5D" backward-word
 bindkey "5C" forward-word
+#bindkey "e[3~" delete-char
+bindkey "^[[3~" delete-char
 
 # TODO: consolidate duplicate lines with bashrc
 
