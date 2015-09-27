@@ -87,6 +87,7 @@ alias trash-list="ls $HOME/.local/share/Trash/files"
 alias downloadPageOneLevel='wget -nH -k -p -r -l 1'
 
 alias lm='lastmod.sh'
+alias lma='lastmod.sh -A'
 alias rr='. ~/.zshrc'
 alias plates='python2.7 ~/bin/plates'	# update code for python3 later
 
