@@ -40,7 +40,6 @@ alias pacman='pacmatic'
 alias pacmann='pacmatic --needed'
 alias pacaurn='pacaur --needed'
 
-alias rh='rehash'
 alias sudo='sudo ' # hack to make aliases work - http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo/22043#22043
 alias trash='gvfs-trash'
 alias trash-list="ls $HOME/.local/share/Trash/files"
@@ -71,8 +70,10 @@ alias kb='setxkbmap dvorak; enable-eight-key.sh'
 alias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
 
 
-# Global aliases (zsh only)
 if [ $ZSH_NAME ]; then
+	alias rh='rehash'
+
+	# Global aliases (zsh only)
 	# http://zsh.sourceforge.net/Intro/intro_8.html
 	alias -g G='| grep'
 	alias -g Gi='| grep -i'
