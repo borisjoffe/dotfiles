@@ -1,0 +1,81 @@
+# ALIASES
+alias c='clear'
+alias r='reset'
+alias ls='ls --color=auto'
+alias ll='ls -lh'
+alias la='ls -A'
+alias lla='ls -lhA'
+alias l='ls -CF'
+alias lsg='ll | grep -i'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias po='popd'
+
+alias rm='rm -iv'
+alias mv='mv -iv'
+alias ln='ln -iv'
+alias cp='cp -iv'
+alias cppreserve='cp -r -i --preserve=mode,ownership,timestamps,links'
+alias cppreservebackup='cp -r -i --backup=numbered --preserve=mode,ownership,timestamps,links'
+alias cppreservebackupsrc='cp -r -i --backup=numbered -f --preserve=mode,ownership,timestamps,links'
+
+alias grep='grep --color'
+alias grepi='grep --color -i'
+alias grep2='grep --color -d skip'
+
+alias df='df -h'
+alias free='free -h'
+alias psg='ps aux| grep -i'
+
+alias e='vim'
+alias vi='vim'
+alias g='git'
+alias f='fish'
+
+alias wifi='sudo iw dev wlan0'
+alias wifiup='sudo ip link set wlan0 up'
+
+alias pacman='pacmatic'
+alias pacmann='pacmatic --needed'
+alias pacaurn='pacaur --needed'
+
+alias rh='rehash'
+alias sudo='sudo ' # hack to make aliases work - http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo/22043#22043
+alias trash='gvfs-trash'
+alias trash-list="ls $HOME/.local/share/Trash/files"
+
+# download this page and all pages one level down including all resources (do not make host directories)
+alias downloadPageOneLevel='wget -nH -k -p -r -l 1'
+
+alias lm='lastmod.sh'
+alias lma='lastmod.sh -A'
+alias plates='python2.7 ~/bin/plates'	# update code for python3 later
+
+# GUI programs
+#alias bitcoin-qt='bitcoin-qt -datadir=/data/bitcoin'
+alias term='runsilent urxvt'
+alias fm='runsilent pcmanfm'
+alias ff='runsilent firefox -no-remote'
+alias chrome='runsilent chromium'
+alias opera='runsilent opera'
+alias rss='runsilent rssowl'
+alias panel='runsilent lxpanel'
+alias keepass='runsilent keepassx'
+
+alias runxlock='xautolock-init.sh'
+alias lock='xautolock -locknow'
+alias kb='setxkbmap dvorak; enable-eight-key.sh'
+
+# Haskell flags
+alias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
+
+
+# Global aliases (zsh only)
+if [ $ZSH_NAME ]; then
+	# http://zsh.sourceforge.net/Intro/intro_8.html
+	alias -g G='| grep'
+	alias -g Gi='| grep -i'
+	alias -g L='| less'
+	alias -g D='date +%F' # date in the format YYYY-MM-DD
+fi

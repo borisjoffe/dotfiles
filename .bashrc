@@ -81,51 +81,9 @@ if [ "$TERM" != "dumb" ]; then
     #alias vdir='ls --color=auto --format=long -h'
 fi
 
-# some more ls aliases
-alias ll='ls -lh'
-alias la='ls -A'
-alias l='ls -CF'
-alias nt='nautilus'
-alias nth='nautilus .'
-alias rm='rm -iv'
-alias mv='mv -iv'
-alias cp='cp -i'
-alias ff='firefox -no-remote -ProfileManager'
-alias c='clear'
-alias r='reset'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias h='cd ~'
-alias ca='cd ~/securewallet/aics'
-alias cw='cd /var/www/aics'
-alias ce='cd /etc/nginx/sites-available'
-alias d='cd /'
-alias disku='du -sh * | sort -rn | head'
-#alias go='gnome-open $1'
-
-alias wifi='sudo iw dev wlan0'
-alias wifiup='sudo ip link set wlan0 up'
-
-alias grep='grep --color'
-
-alias pacman='pacmatic'
-alias pacmann='pacmatic --needed'
-alias pacaurn='pacaur --needed'
-
-alias lm='lastmod.sh'
+source ~/.aliases
 alias rr='source ~/.bashrc'
-alias rh='rehash'
-
-
-#alias bitcoin-qt='bitcoin-qt -datadir=/data/bitcoin'
-
-#alias install="sudo apt-get install"
-#alias remove="sudo apt-get remove"
-#alias search="apt-cache search"
-
-# remap 8/* key to CAPS LOCK while disabling CAPS LOCK
-source $HOME/bin/enable-eight-key.sh
+source ~/.shellrc
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -133,21 +91,3 @@ source $HOME/bin/enable-eight-key.sh
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
-
-
-export PATH="$PATH:/home/boris/bin:/opt/clojurescript/bin"
-#export PATH="$PATH:/home/boris/bin:/data/android-sdk-linux/tools:/data/android-sdk-linux/platform-tools:/usr/local/heroku/bin:/home/boris/code/tizen-sdk/tools"
-#export TIZEN_SDK_HOME=~/code/tizen-sdk
-
-TZ="America/Los_Angeles"
-export TZ
-
-# Encryption / Decryption Functions
-encrypt () {
-	gpg -ac --no-options "$1"
-}
-
-crypt () {
-	gpg --no-options "$1"
-}
-source /usr/share/nvm/init-nvm.sh
