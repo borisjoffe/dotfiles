@@ -154,7 +154,7 @@
      cases. -->
   <margins>
     <top>0</top>
-    <bottom>0</bottom>
+    <bottom>26</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
@@ -322,7 +322,7 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-	<!--
+    <!--
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
