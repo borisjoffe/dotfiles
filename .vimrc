@@ -71,7 +71,7 @@ au BufWinEnter * match ExtraWhitespace /\s\+$/
 
 " ==== FILE TYPE SPECIFIC BEHAVIOR ====
 
-autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+autocmd BufRead,BufNewFile *.es6\|*.jsx\|*.ts\|.jshintrc setfiletype javascript
 autocmd BufRead,BufNewFile *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
 
 au FileType python setlocal expandtab
