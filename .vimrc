@@ -61,9 +61,11 @@ endif
 "\ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
 "imap <C-@> <C-Space>
 
-let g:syntastic_javascript_checkers = ['jsxhint']
-let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_jsxhint_exec = 'jshint'
+" let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+let g:vim_json_syntax_conceal = 0
 
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
