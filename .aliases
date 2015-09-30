@@ -61,6 +61,7 @@ alias opera='runsilent opera'
 alias rss='runsilent rssowl'
 alias panel='runsilent lxpanel'
 alias keepass='runsilent keepassx'
+alias subl='runsilent subl'
 
 alias runxlock='xautolock-init.sh'
 alias lock='xautolock -locknow'
