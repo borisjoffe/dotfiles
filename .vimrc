@@ -75,6 +75,7 @@ au BufWinEnter * match ExtraWhitespace /\s\+$/
 
 autocmd BufRead,BufNewFile *.es6\|*.jsx\|*.ts\|.jshintrc setfiletype javascript
 autocmd BufRead,BufNewFile *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
+autocmd BufRead,BufNewFile .shellrc\|.aliases setfiletype sh
 
 au FileType python setlocal expandtab
 au FileType haskell setlocal expandtab
