@@ -1,3 +1,3 @@
 function trash-list
-	ls $HOME/.local/share/Trash/files
+	ls $argv $HOME/.local/share/Trash/files
 end
