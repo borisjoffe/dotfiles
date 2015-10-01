@@ -99,5 +99,8 @@ export LESS_TERMCAP_so=$(printf '\e[1;44;1m')
 
 #eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
 
+disp () {
+	export DISPLAY=:$1
+}
 
 source /usr/share/nvm/init-nvm.sh
