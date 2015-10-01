@@ -68,9 +68,11 @@ alias runxlock='xautolock-init.sh'
 alias lock='xautolock -locknow'
 alias kb='setxkbmap dvorak; enable-eight-key.sh'
 
+# Android
+alias emulator='runsilent emulator -force-32bit'
+
 # Haskell flags
 alias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
-
 
 if [ $ZSH_NAME ]; then
 	alias rh='rehash'
