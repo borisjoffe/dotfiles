@@ -26,6 +26,7 @@ alias grep2='grep --color -d skip'
 
 alias df='df -h'
 alias free='free -h'
+alias ps='ps aux'
 alias psg='ps aux| grep -i'
 
 alias e='vim'
