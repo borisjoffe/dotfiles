@@ -1,0 +1,174 @@
+#compdef ionic
+#autoload
+#
+# Copy of https://gist.github.com/object-kazu/8629824 with s/cordova/ionic/g
+
+typeset -A opt_args
+local context state line
+
+_ionic() {
+  local context state line curcontext="$curcontext"
+
+  if (( CURRENT > 2 )); then
+    (( CURRENT-- ))
+    shift words
+    _call_function - "__ionic_${words[1]}" || _nothing
+  else
+    __ionic_commands
+  fi
+}
+
+
+__ionic_commands() {
+  local context state line curcontext="$curcontext"
+
+  local -a ionic_options
+  __ionic_setup_ionic_options
+
+
+  _arguments -C \
+  $ionic_options \
+  ': :->command'
+
+  case "$state" in
+    command)
+local -a commands
+
+commands=(
+  create'[creates a ionic project in the specified PATH]'
+  help'[shows this syntax summary]'
+  info'[print out useful information helpful for submitting bug reports and getting help.]'
+  server'[runs a local web server for www/ assets. Port defaults to 8000.]'
+  run'[deploys app on specified (or all) platform devices]'
+  prepare'[copies files for specified platforms, or all platforms]'
+  compile'[builds the app for specified platforms, or all platforms]'
+  build'[shortcut for prepare, then compile]'
+  emulate'[deploys app in specified (or all) platform emulator(s)]'
+  platform'[add or remove a specified PLATFORM, etc]'
+  plugin'[add or remove a plugin from the specified PATH or URI, etc]'
+
+  )
+
+
+_values 'command' $commands
+;;
+esac
+}
+
+__ionic_plugin() {
+  local context state line curcontext="$curcontext"
+
+  if (( CURRENT > 2 )); then
+    (( CURRENT-- ))
+    shift word
+    _call_function - "__ionic_plugin_${words[1]}" || _nothing
+  else
+    __ionic_plugin_commands
+  fi
+
+}
+
+__ionic_plugin_commands (){
+
+ local context state line curcontext="$curcontext"
+
+ local -a ionic_options
+
+ _arguments -C \
+ $ionic_options \
+ ': :->command'
+
+ case "$state" in
+  command)
+local -a commands
+
+commands=(
+  add'[add platform]'
+  {remove,rm}'[remove platform]'
+  {list,ls}'[list all currently installed plugins]'
+  search'[search the plugin registry for plugins matching the keywords]'
+  )
+
+_values 'command' $commands
+;;
+esac
+
+}
+
+
+__ionic_platform() {
+  local context state line curcontext="$curcontext"
+
+  if (( CURRENT > 2 )); then
+    (( CURRENT-- ))
+    shift word
+    _call_function - "__ionic_platform_${words[1]}" || _nothing
+  else
+    __ionic_platform_commands
+  fi
+
+}
+
+__ionic_platform_commands (){
+
+ local context state line curcontext="$curcontext"
+
+ local -a ionic_options
+
+ _arguments -C \
+ $ionic_options \
+ ': :->command'
+
+ case "$state" in
+  command)
+local -a commands
+
+commands=(
+  add'[add platform]'
+  {remove,rm}'[remove platform]'
+  {list,ls}'[list all currently installed plugins]'
+  {update,up}'[update the version of ionic]'
+  search'[search the plugin registry for plugins matching the keywords]'
+  )
+
+
+_values 'command' $commands
+;;
+esac
+
+}
+
+__ionic_setup_ionic_options() {
+  ionic_options=(
+    -d'[debug mode ...]'
+    -v'[prints out this utility version]'
+    )
+}
+
+__ionic_server(){
+ __ionic_platform_select
+}
+
+__ionic_run(){
+  __ionic_platform_select
+}
+
+__ionic_prepare(){
+ __ionic_platform_select
+}
+
+__ionic_compile(){
+  __ionic_platform_select
+}
+__ionic_build(){
+  __ionic_platform_select
+}
+__ionic_emulate(){
+  __ionic_platform_select
+}
+
+__ionic_platform_select(){
+  _values 'platform' 'ios' 'android'
+}
+
+_ionic "$@"

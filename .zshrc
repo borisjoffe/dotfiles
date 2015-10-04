@@ -8,6 +8,7 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '$HOME/.zshrc'
+fpath=(~/.zsh $fpath)
 
 autoload -Uz compinit && compinit
 # End of lines added by compinstall
