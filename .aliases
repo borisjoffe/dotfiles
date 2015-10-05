@@ -83,4 +83,5 @@ if [ $ZSH_NAME ]; then
 	alias -g Gi='| grep -i'
 	alias -g L='| less'
 	alias -g D='date +%F' # date in the format YYYY-MM-DD
+	alias -g TEST=' && echo "true" || echo "false"'
 fi
