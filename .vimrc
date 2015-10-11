@@ -75,7 +75,13 @@ let g:syntastic_javascript_jsxhint_exec = 'jshint'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:vim_json_syntax_conceal = 0
 
-let g:syntastic_html_tidy_exec = 'tidy5'
+"let g:syntastic_html_tidy_exec = ''
+"let g:syntastic_html_tidy_exec = 'tidy'
+"fix config file not working
+"let g:syntastic_html_tidy_args = '-config /home/boris/.tidyrc'
+"['tidy']
+" temporarily disable until config file works
+let g:syntastic_html_checkers = []
 
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
