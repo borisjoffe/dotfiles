@@ -67,7 +67,6 @@ alias downloadPageOneLevel='wget -nH -k -p -r -l 1'
 
 alias lm='lastmod.sh'
 alias lma='lastmod.sh -A'
-alias plates='python2.7 ~/bin/plates'	# update code for python3 later
 
 # GUI programs
 #alias bitcoin-qt='bitcoin-qt -datadir=/data/bitcoin'
