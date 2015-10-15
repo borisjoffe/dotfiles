@@ -62,8 +62,9 @@ export SOLARIZED=1
 . $HOME/bin/keychain-init.sh &
 . $HOME/bin/xautolock-init.sh &
 
-openbox &
 lxpanel &
 sh .fehbg &
 redshift &
-exec urxvt
+xbindkeys &
+urxvt &
+exec openbox
