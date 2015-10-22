@@ -109,7 +109,7 @@ au FileType haskell setlocal expandtab
 autocmd FileType text,markdown,asciidoc setlocal spell
 autocmd FileType html,jade setlocal spell
 autocmd FileType tex setlocal spell
-autocmd FileType workout setlocal nospell
+"autocmd FileType workout setlocal nospell
 
 " copy/paste
 command -range Cz :silent :<line1>,<line2>w !xsel -i -b
