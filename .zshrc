@@ -65,5 +65,3 @@ export RPS1='%{$fg[yellow]%}$(__prompt_git) %{$reset_color%}%*'
 #export PS1=$'\e[0;96m%~ %M%%\e[0m '
 #export PS1=$'\e[0;31m$ \e[0m'
 
-# OPAM configuration
-. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

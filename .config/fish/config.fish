@@ -8,3 +8,6 @@ setenv HTML_TIDY "$HOME/.tidyrc"
 setenv pacman_program pacaur # make pacmatic use pacaur so you can get news and update AUR at the same time
 
 ssh_agent_start
+
+# OPAM Configuration - doesn't work - TODO: fix
+#. /home/boris/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true

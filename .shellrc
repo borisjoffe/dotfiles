@@ -115,3 +115,10 @@ eval "$(fasd --init auto)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# OPAM configuration
+if [ $ZSH_NAME ]; then
+	. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+else
+	. $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+fi
