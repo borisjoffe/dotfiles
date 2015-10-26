@@ -29,3 +29,6 @@ abbr l 'ls -CF'
 abbr vip 'vim -p'
 abbr vir 'vim -R'
 abbr vipr 'vim -pR'
+abbr gco 'git checkout'
+abbr pac pacmatic
+abbr pacn 'pacmatic --needed'
