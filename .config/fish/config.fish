@@ -10,4 +10,4 @@ setenv pacman_program pacaur # make pacmatic use pacaur so you can get news and 
 ssh_agent_start
 
 # OPAM Configuration - doesn't work - TODO: fix
-#. /home/boris/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
+. /home/boris/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
