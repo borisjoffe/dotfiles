@@ -19,6 +19,9 @@ function fish_prompt --description 'Write out the prompt'
 		set suffix '$'
 	end
 
+	#set git_prompt (__fish_git_prompt)
+	set git_prompt (__terlar_git_prompt)
+
 	# echo -n -s "$USER" @ "$__fish_prompt_hostname" ' ' (set_color $color_cwd) (prompt_pwd) (set_color normal) "$suffix "
-	echo -n -s (set_color $color_cwd) (prompt_pwd)  ' ' "$suffix " (set_color normal)
+	echo -n -s (set_color $color_cwd) (prompt_pwd) $git_prompt ' ' "$suffix " (set_color normal)
 end
