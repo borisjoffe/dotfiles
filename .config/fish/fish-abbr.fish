@@ -32,3 +32,8 @@ abbr vipr 'vim -pR'
 abbr gco 'git checkout'
 abbr pac pacmatic
 abbr pacn 'pacmatic --needed'
+abbr paci 'pacmatic --needed -S'
+abbr pacu 'pacmatic -Syu'
+abbr pacs 'pacmatic -Ss'
+abbr pacsi 'pacmatic -Si'
+abbr pacqi 'pacmatic -Qi'
