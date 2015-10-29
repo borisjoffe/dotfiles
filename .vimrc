@@ -56,6 +56,8 @@ else
 	colorscheme elflord
 endif
 
+set tags=./tags,tags;$HOME
+
 "set omnifunc=syntaxcomplete#Complete
 
 " FIX JEDI VIM as soon as possible
