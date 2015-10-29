@@ -4,6 +4,11 @@ set showmatch
 set showcmd
 set showmode
 
+set laststatus=2
+set statusline=%f         " Path to the file
+set statusline+=\ -\      " Separator
+set statusline+=%y        " Filetype of the file
+
 set tabstop=4
 set shiftwidth=4
 set smarttab
