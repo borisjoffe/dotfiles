@@ -41,7 +41,7 @@
     Mod4 + l 
 
 #Suspend (with locking)
-"xautolock -locknow; sleep 1; systemctl suspend"
+"suspend.sh"
     m:0x40 + c:47
     Mod4 + s 
 
