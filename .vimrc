@@ -139,4 +139,4 @@ cabbrev pv Pv
 "\ | execute ':silent !'.<q-args>
 "\ | execute ':redraw!'
 
-command! Adoc :silent execute "!asciidoc %" | redraw!
+command! Adoc :silent execute '!asciidoc %' | redraw!
