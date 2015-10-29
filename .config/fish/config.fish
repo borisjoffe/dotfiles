@@ -17,4 +17,4 @@ set -U fish_greeting ""
 ssh_agent_start
 
 # OPAM Configuration - doesn't work - TODO: fix
-. /home/boris/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
+source /home/boris/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
