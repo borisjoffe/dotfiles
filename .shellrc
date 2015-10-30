@@ -1,16 +1,8 @@
 source "$HOME/.env"
 
-export PATH="$PATH:$HOME/bin:/data/android/android-sdk-linux/tools:/data/android/android-sdk-linux/platform-tools:$HOME/.gem/ruby/2.2.0/bin"
-export ANDROID_HOME="/data/android/sdk"
-export EDITOR=vim
-export HTML_TIDY="$HOME/.tidyrc"
-# don't use tizen or heroku anymore: /usr/local/heroku/bin:$HOME/code/tizen-sdk/tools
-# export TIZEN_SDK_HOME=~/code/tizen-sdk
-
 alias solarized-switch='source $HOME/bin/solarized-switch.sh'
 source $HOME/bin/solarized-switch.sh $SOLARIZED
 
-export TZ="America/Los_Angeles"
 
 # Encryption / Decryption Functions
 encrypt () {
@@ -109,11 +101,9 @@ disp () {
 	export DISPLAY=:$1
 }
 
-export pacman_program=pacaur # make pacmatic use pacaur so you can get news and update AUR at the same time
-
 eval "$(fasd --init auto)"
 
-export NVM_DIR="$HOME/.nvm"
+# NVM_DIR var in .env
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # OPAM configuration

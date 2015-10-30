@@ -1,11 +1,7 @@
 #!/bin/fish
 
-setenv SOLARIZED 1
-setenv SSH_ENV $HOME/.ssh/environment
-setenv PATH $PATH $HOME/bin /data/android/android-sdk-linux/tools/ /data/android/android-sdk-linux/platform-tools/
-setenv ANDROID_HOME /data/android/sdk
-setenv HTML_TIDY "$HOME/.tidyrc"
-setenv pacman_program pacaur # make pacmatic use pacaur so you can get news and update AUR at the same time
+set fish_function_path $fish_function_path $HOME/.config/fish/plugin-foreign-env/functions
+fenv source $HOME/.env
 
 # Set universal vars here to prevent being overwritten
 # due to hostname bug: https://github.com/fish-shell/fish-shell/issues/183
