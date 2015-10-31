@@ -27,6 +27,13 @@ mdcd () {
 	cd $1;
 }
 
+# Bash calculator hack: http://askubuntu.com/questions/378661/any-command-line-calculator-for-ubuntu
+=() {
+    calc="${@//p/+}"
+    calc="${calc//x/*}"
+    echo "$(($calc))"
+}
+
 # A shortcut function that simplifies usage of xclip.
 # - Accepts input from either stdin (pipe), or params.
 # From: http://madebynathan.com/2011/10/04/a-nicer-way-to-use-xclip/
