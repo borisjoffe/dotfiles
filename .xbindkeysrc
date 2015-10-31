@@ -71,7 +71,7 @@
     Shift + Print 
 
 #Screenshot focused window
-"scrot --focused"
+"scrot --focused; notify.sh "Screenshot successful""
     m:0x8 + c:107
     Alt + Print 
 
