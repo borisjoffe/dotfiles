@@ -39,3 +39,4 @@ abbr pacsi 'pacmatic -Si'
 abbr pacqi 'pacmatic -Qi'
 abbr dsrc '/data/src'
 abbr grem 'git remote'
+abbr b bash
