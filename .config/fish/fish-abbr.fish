@@ -40,3 +40,4 @@ abbr pacqi 'pacmatic -Qi'
 abbr dsrc '/data/src'
 abbr grem 'git remote'
 abbr b bash
+abbr lg llg
