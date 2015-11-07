@@ -1,0 +1,24 @@
+# Temporary files
+*~
+
+# Vim
+*.swp
+*.swo
+tags
+.ctags
+
+# Secrets
+*.config
+*env*
+*secret*
+
+# Dev specific
+*.pyc
+node_modules/
+Gemfile.lock
+
+# Logging / Debugging
+*log*
+*trace*
+*dump*
+nohup.out
