@@ -41,3 +41,4 @@ abbr dsrc '/data/src'
 abbr grem 'git remote'
 abbr b bash
 abbr lg llg
+abbr bc 'bc -l'

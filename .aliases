@@ -28,6 +28,7 @@ alias df='df -h'
 alias free='free -h'
 alias ps='ps aux'
 alias psg='ps aux| grep -i'
+alias bc='bc -l'
 
 alias e='vim'
 alias vi='vim'
