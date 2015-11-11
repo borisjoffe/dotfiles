@@ -1,0 +1,46 @@
+[include]
+	path = ~/.gitconfig.local
+[color]
+	ui = true
+[credential]
+	helper = cache --timeout=999999999
+[core]
+	pager = "less -F -X"
+	editor = vim
+	excludesfile = ~/.gitignore.global
+[merge]
+	tool = vimdiff
+[alias]
+	a       = add -p
+	comm    = commit
+	ci      = commit
+	cia     = commit --amend
+	d       = diff
+	dc    	= diff --cached
+	dcns    = diff --cached --name-status
+	dns     = diff --name-status
+	sh      = show
+	stat    = status
+	st      = status
+	s       = status
+	f    	= fetch --tags
+	br      = branch
+	co      = checkout
+	ls      = log --stat --pretty --abbrev-commit
+	lso     = log --oneline
+
+	mnof    = merge --no-ff
+	mt      = mergetool
+
+	dom     = diff origin/master
+	domns   = diff --name-status origin/master
+	com     = checkout master
+	pom     = pull origin master
+	psoh    = push origin HEAD
+
+	inc     = !git fetch && git log ..FETCH_HEAD
+	out     = !git fetch && git log FETCH_HEAD..
+
+	visual  = !gitk.cmd
+[push]
+	default = simple
