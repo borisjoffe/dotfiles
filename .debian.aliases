@@ -1,0 +1,4 @@
+install=sudo apt-get install
+search=sudo apt-cache search
+update=sudo apt-get update && sudo apt-get upgrade
+remove=sudo apt-get remove
