@@ -101,3 +101,9 @@ if [ $ZSH_NAME ]; then
 	alias -g D='date +%F' # date in the format YYYY-MM-DD
 	alias -g TEST=' && echo "true" || echo "false"'
 fi
+
+# Debian aliases
+alias install='sudo apt-get install'
+alias search='apt-cache search'
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias remove='sudo apt-get remove'
