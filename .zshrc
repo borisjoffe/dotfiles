@@ -52,6 +52,7 @@ function __prompt_git() {
 
 autoload -U colors && colors
 autoload -U promptinit && promptinit
+autoload -U select-word-style && select-word-style bash #TODO: change to bash-style for Alt-Bksp and zsh-style for Ctrl-W
 
 #PROMPT='%~ %M%% '
 setopt prompt_subst
