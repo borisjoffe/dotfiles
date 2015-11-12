@@ -42,3 +42,6 @@ abbr grem 'git remote'
 abbr b bash
 abbr lg llg
 abbr bc 'bc -l'
+abbr nxa '/etc/nginx/sites-available'
+abbr nxe '/etc/nginx/sites-enabled'
+abbr VL '/var/log'

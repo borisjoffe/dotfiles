@@ -100,6 +100,10 @@ if [ $ZSH_NAME ]; then
 	alias -g L='| less'
 	alias -g D='date +%F' # date in the format YYYY-MM-DD
 	alias -g TEST=' && echo "true" || echo "false"'
+
+	alias -g nxa='/etc/nginx/sites-available'
+	alias -g nxe='/etc/nginx/sites-enabled'
+	alias -g VL='/var/log'
 fi
 
 # Debian aliases
