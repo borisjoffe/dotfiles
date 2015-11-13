@@ -66,4 +66,5 @@ sh .fehbg &
 redshift &
 xbindkeys &
 urxvt &
+workrave &
 exec openbox
