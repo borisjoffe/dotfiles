@@ -140,10 +140,10 @@
     m:0x40 + c:18
     Mod4 + 9 
 
-#Raise window 10
-"window-raise-toggle.sh 10"
+#Raise last window
+"window-raise-toggle.sh 0"
     m:0x40 + c:19
-    Mod4 + 10 
+    Mod4 + 0 
 
 #
 # End of xbindkeys configuration
