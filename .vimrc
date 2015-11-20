@@ -76,8 +76,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_javascript_jsxhint_exec = 'jshint'
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_jsxhint_exec = 'eslint'
 " let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:vim_json_syntax_conceal = 0
@@ -96,7 +96,8 @@ au BufWinEnter * match ExtraWhitespace /\s\+$/
 
 " ==== FILE TYPE SPECIFIC BEHAVIOR ====
 
-autocmd BufRead,BufNewFile *.es6\|*.jsx\|*.ts\|.jshintrc setfiletype javascript
+autocmd BufRead,BufNewFile *.es6\|*.jsx\|*.ts setfiletype javascript
+autocmd BufRead,BufNewFile .jshintrc\|.eslintrc  setfiletype json
 autocmd BufRead,BufNewFile *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
 autocmd BufRead,BufNewFile .shellrc\|*.aliases setfiletype sh
 
