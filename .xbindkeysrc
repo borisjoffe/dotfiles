@@ -36,7 +36,7 @@
 
 
 #Lock Screen
-"xautolock -locknow"
+"locknow.sh"
     m:0x40 + c:33
     Mod4 + l 
 
