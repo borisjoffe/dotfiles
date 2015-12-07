@@ -12,9 +12,8 @@ set -U fish_greeting ""
 
 ssh_agent_start
 
-# OPAM Configuration - doesn't work - TODO: fix
-source /home/boris/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
-
+# OPAM Configuration - Manually fixed PATH and MANPATH in ~/.opam/opam-init/variables.fish
+source $HOME/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
 
 # Path to Oh My Fish install.
 set -gx OMF_PATH /home/boris/.local/share/omf
