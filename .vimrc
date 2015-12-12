@@ -88,6 +88,10 @@ let g:syntastic_javascript_jsxhint_exec = 'eslint'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:vim_json_syntax_conceal = 0
 
+let g:syntastic_python_python_exec = '/usr/bin/python'
+let g:syntastic_python_checkers = ['flake8']
+autocmd BufRead,BufNewFile,BufWritePost *.py :if getline(1) =~# '^#!.*python2' | let g:syntastic_python_flake8_exec = 'flake8-python2' | endif
+
 "let g:syntastic_html_tidy_exec = ''
 "let g:syntastic_html_tidy_exec = 'tidy'
 "fix config file not working
