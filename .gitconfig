@@ -25,6 +25,7 @@
 	s       = status
 	f    	= fetch --tags
 	br      = branch
+	cbr     = rev-parse --abbrev-ref HEAD
 	co      = checkout
 	ls      = log --stat --pretty --abbrev-commit
 	lso     = log --oneline
