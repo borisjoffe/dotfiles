@@ -68,9 +68,15 @@ set tags=./tags,tags;$HOME
 "\ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
 "imap <C-@> <C-Space>
 
+" Statusline must be set after colorscheme
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set statusline+=%=
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
