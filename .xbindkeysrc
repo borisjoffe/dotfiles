@@ -61,17 +61,17 @@
     XF86AudioLowerVolume 
 
 #Screenshot Full Screen (Multimonitor)
-"scrot --multidisp"
+"redshift -x; scrot --multidisp"
     m:0x0 + c:107
     Print 
 
 #Screenshot - Select region
-"scrot --select"
+"redshift -x; scrot --select"
     m:0x1 + c:107
     Shift + Print 
 
 #Screenshot focused window
-"scrot --focused; notify.sh "Screenshot successful""
+"redshift -x; scrot --focused; notify.sh "Screenshot successful""
     m:0x8 + c:107
     Alt + Print 
 
