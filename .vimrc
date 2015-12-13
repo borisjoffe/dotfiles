@@ -127,6 +127,7 @@ au FileType haskell setlocal expandtab
 autocmd FileType text,markdown,asciidoc setlocal spell
 autocmd FileType html,jade setlocal spell
 autocmd FileType tex setlocal spell
+autocmd FileType gitcommit setlocal spell
 "autocmd FileType workout setlocal nospell
 
 " copy/paste
