@@ -56,7 +56,7 @@ fi
 
 . $HOME/.env
 
-. $HOME/bin/solarized-switch.sh $SOLARIZED &
+. $HOME/bin/solarized-switch.sh $SOLARIZED
 . $HOME/bin/keyboard-init.sh &
 . $HOME/bin/keychain-init.sh &
 . $HOME/bin/xautolock-init.sh &
