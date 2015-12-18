@@ -24,7 +24,7 @@ indent_size = 4
 #indent_style = tab
 #indent_size = 4
 
-#[*.{css,sass,less,stylus}]
+#[*.{css,sass,less,styl,stylus}]
 #indent_style = tab
 #indent_size = 4
 
