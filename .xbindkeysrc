@@ -145,5 +145,10 @@
     m:0x40 + c:19
     Mod4 + 0 
 
+#dmenu
+"dmenu_run"
+    m:0x40 + c:36
+    Mod4 + Return 
+
 #
 # End of xbindkeys configuration
