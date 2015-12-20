@@ -63,8 +63,9 @@ fi
 
 lxpanel &
 sh .fehbg &
-redshift &
+redshift -o &
 xbindkeys &
 urxvt &
 workrave &
+rescuetime &
 exec openbox
