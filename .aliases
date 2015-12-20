@@ -58,6 +58,12 @@ alias wifiup='sudo ip link set wlan0 up'
 alias pacman='pacmatic'
 alias pacmann='sudo pacmatic --needed'
 alias pacaurn='pacaur --needed'
+alias pac='pacmatic'
+alias paci='pacmatic --needed -S'
+alias pacu='pacmatic -Syu'
+alias pacs='pacmatic -Ss'
+alias pacqi='pacmatic -Qi'
+alias pacsi='pacmatic -Si'
 
 alias sudo='sudo ' # hack to make aliases work - http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo/22043#22043
 alias trash='gvfs-trash'
