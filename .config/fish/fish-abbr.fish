@@ -44,3 +44,6 @@ abbr nxe '/etc/nginx/sites-enabled'
 abbr VL '/var/log'
 abbr pacu 'sudo pacmatic -Syu'
 abbr mysqli 'mysql --auto-rehash'
+abbr gcl 'git clone'
+abbr t tmux
+abbr v 'vim -p'
