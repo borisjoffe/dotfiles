@@ -1,7 +1,8 @@
 #!/bin/fish
 
 set fish_function_path $fish_function_path $HOME/.config/fish/plugin-foreign-env/functions
-source $HOME/.env > /dev/null
+source ~/.env
+[ -f ~/.apikeys ]; and source ~/.apikeys
 
 # Set universal vars here to prevent being overwritten
 # due to hostname bug: https://github.com/fish-shell/fish-shell/issues/183
