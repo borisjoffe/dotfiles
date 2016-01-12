@@ -72,11 +72,16 @@ alias sudo='sudo ' # hack to make aliases work - http://askubuntu.com/questions/
 alias trash='gvfs-trash'
 alias trash-list="ls $HOME/.local/share/Trash/files"
 
+
 # download this page and all pages one level down including all resources (do not make host directories)
 alias downloadPageOneLevel='wget -nH -k -p -r -l 1'
 
+alias downloadPdfsOnPage='wget -nH -r -l 1 -H -A pdf'
+
+
 alias lm='lastmod.sh'
 alias lma='lastmod.sh -A'
+
 
 # GUI programs
 #alias bitcoin-qt='bitcoin-qt -datadir=/data/bitcoin'
