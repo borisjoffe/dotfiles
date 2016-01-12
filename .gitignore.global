@@ -12,6 +12,7 @@ tags
 *env*
 *secret*
 .gitignore.local
+.my.cnf*
 
 # Dev specific
 *.pyc
@@ -19,7 +20,7 @@ node_modules/
 Gemfile.lock
 
 # Logging / Debugging
-*log*
+*.log
 *trace*
 *dump*
 nohup.out
