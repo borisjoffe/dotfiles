@@ -1,4 +1,5 @@
 source "$HOME/.env"
+[ -f ~/.apikeys ] && source ~/.apikeys
 
 alias solarized-switch='source $HOME/bin/solarized-switch.sh'
 source $HOME/bin/solarized-switch.sh $SOLARIZED
