@@ -109,6 +109,7 @@ au BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd BufRead,BufNewFile *.es6\|*.jsx\|*.ts setfiletype javascript
 autocmd BufRead,BufNewFile .jshintrc\|.eslintrc  setfiletype json
 autocmd BufRead,BufNewFile *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
+autocmd BufRead,BufNewFile *.md\|*.markdown setlocal filetype=ghmarkdown
 autocmd BufRead,BufNewFile .shellrc\|*.aliases setfiletype sh
 
 au FileType python setlocal expandtab
