@@ -20,9 +20,9 @@ alias cppreserve='cp -r -i --preserve=mode,ownership,timestamps,links'
 alias cppreservebackup='cp -r -i --backup=numbered --preserve=mode,ownership,timestamps,links'
 alias cppreservebackupsrc='cp -r -i --backup=numbered -f --preserve=mode,ownership,timestamps,links'
 
-alias grep='grep --color'
-alias grepi='grep --color -i'
-alias grep2='grep --color -d skip'
+alias grep='grep --color=always'
+alias grepi='grep --color=always -i'
+alias grep2='grep --color=always -d skip'
 
 alias df='df -h'
 alias free='free -h'
