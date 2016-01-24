@@ -1,9 +1,7 @@
-source "$HOME/.env"
-[ -f ~/.apikeys ] && source ~/.apikeys
+source ~/.env
 
-alias solarized-switch='source $HOME/bin/solarized-switch.sh'
+abbr solarized-switch='source $HOME/bin/solarized-switch.sh'
 source $HOME/bin/solarized-switch.sh $SOLARIZED
-
 
 # Encryption / Decryption Functions
 encrypt () {
@@ -67,9 +65,9 @@ cb() {
 # Copy contents of a file
 function cbf() { cat "$1" | cb; }
 # Copy current working directory
-alias cbwd="pwd | cb"
+abbr cbwd="pwd | cb"
 # Copy most recent command in bash history
-alias cbhs="cat $HISTFILE | tail -n 1 | cb"
+abbr cbhs="cat $HISTFILE | tail -n 1 | cb"
 
 
 export LESS=-R
@@ -102,10 +100,12 @@ disp () {
 	export DISPLAY=:$1
 }
 
-eval "$(fasd --init auto)"
-
 # NVM_DIR var in .env
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+eval "$(fasd --init auto)"
+
+#source ~/bin/resty
 
 # OPAM configuration
 if [ $ZSH_NAME ]; then
