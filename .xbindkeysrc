@@ -75,15 +75,40 @@
     m:0x8 + c:107
     Alt + Print 
 
-#Terminal
+#Terminal Fish
 "urxvt -e fish -i"
     m:0x40 + c:45
     Mod4 + t 
+
+#Terminal Zsh
+"urxvt -e zsh -i"
+    m:0x40 + c:61
+    Mod4 + z 
+
+#Terminal Bash
+"urxvt -e bash -i"
+    m:0x40 + c:57
+    Mod4 + b 
 
 #File Manager
 "pcmanfm"
     m:0x40 + c:29
     Mod4 + f 
+
+#Chrome
+"chromium"
+    m:0x40 + c:31
+    Mod4 + c 
+
+#KeePassX
+"keepassx"
+    m:0x40 + c:55
+    Mod4 + k 
+
+#Firefox
+"firefox -no-remote"
+    m:0x40 + c:56
+    Mod4 + x 
 
 #Leafpad Editor
 "leafpad"
