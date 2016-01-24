@@ -1,7 +1,10 @@
 #!/bin/fish
 
+# identify  fish shell when running in bass
+set FISH true
+
 set fish_function_path $fish_function_path $HOME/.config/fish/plugin-foreign-env/functions
-bass source ~/.env > /dev/null
+env FISH=true bass source ~/.env > /dev/null
 source ~/bin/solarized-switch.fish
 
 # Set universal vars here to prevent being overwritten
