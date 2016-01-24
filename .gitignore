@@ -1,0 +1,7 @@
+*.swp
+
+!.config/
+!.config/**/*
+!.env
+
+*secret*
