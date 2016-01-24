@@ -31,8 +31,46 @@ bindkey "5C" forward-word
 #bindkey "e[3~" delete-char
 bindkey "^[[3~" delete-char
 
+
+### Fish-style abbr
+# Based on https://wiki.math.cmu.edu/iki/wiki/tips/20140625-zsh-expand-alias.html
+typeset -a abbrs
+abbrs=()
+
+function abbr()
+{
+	alias $@
+	abbrs+=(${@%%\=*})
+}
+
+function expand-abbr()
+{
+	if [[ $LBUFFER =~ "(^|[;|&])\s*(${(j:|:)abbrs})\$" ]]; then
+		zle _expand_alias
+		zle expand-word
+	fi
+	zle magic-space
+}
+
+function force-expand-abbr()
+{
+	zle _expand_alias
+	zle expand-word
+	zle magic-space
+}
+
+zle -N expand-abbr
+zle -N force-expand-abbr
+
+bindkey -M emacs ' '     expand-abbr
+bindkey -M emacs '^\034'  force-expand-abbr # Ctrl-\ forces expansion (regardless of preceding chars - useful for global aliases)
+bindkey -M emacs '^ '    magic-space     # control-space to bypass completion
+bindkey -M isearch " "   magic-space # normal space during searches
+
+### End abbr
+
 source "$HOME/.aliases"
-alias rr='source ~/.zshrc'
+abbr rr='source ~/.zshrc'
 source "$HOME/.shellrc"
 
 git_prompt() {

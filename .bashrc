@@ -64,6 +64,8 @@ xterm*|rxvt*)
     ;;
 esac
 
+alias abbr=alias
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -76,13 +78,13 @@ esac
 # enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ]; then
     eval "`dircolors -b`"
-    alias ls='ls --color=auto'
-    #alias dir='ls --color=auto --format=vertical'
-    #alias vdir='ls --color=auto --format=long -h'
+    abbr ls='ls --color=auto'
+    #abbr dir='ls --color=auto --format=vertical'
+    #abbr vdir='ls --color=auto --format=long -h'
 fi
 
 source ~/.aliases
-alias rr='source ~/.bashrc'
+abbr rr='source ~/.bashrc'
 source ~/.shellrc
 
 # enable programmable completion features (you don't need to enable
