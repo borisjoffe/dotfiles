@@ -68,4 +68,9 @@ xbindkeys &
 urxvt &
 workrave &
 rescuetime &
+
 exec openbox
+
+# Turn on dual monitors if plugged in
+xrandr --current | grep VGA1 > /dev/null
+[ $? ] && dualmon on &
