@@ -1,8 +1,8 @@
 #!/bin/fish
 
 set fish_function_path $fish_function_path $HOME/.config/fish/plugin-foreign-env/functions
-source ~/.env
-[ -f ~/.apikeys ]; and source ~/.apikeys
+bass source ~/.env > /dev/null
+source ~/bin/solarized-switch.fish
 
 # Set universal vars here to prevent being overwritten
 # due to hostname bug: https://github.com/fish-shell/fish-shell/issues/183
