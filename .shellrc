@@ -13,19 +13,6 @@ crypt () {
 }
 
 
-# cd and ls
-cdl() {
-	cd $1;
-	shift;
-	ls $@
-}
-
-# mkdir and cd
-mdcd () {
-	mkdir $1;
-	cd $1;
-}
-
 # A shortcut function that simplifies usage of xclip.
 # - Accepts input from either stdin (pipe), or params.
 # From: http://madebynathan.com/2011/10/04/a-nicer-way-to-use-xclip/
