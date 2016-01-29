@@ -1,6 +1,6 @@
 source ~/.env
 
-abbr solarized-switch='source $HOME/bin/solarized-switch.sh'
+ealias solarized-switch='source $HOME/bin/solarized-switch.sh'
 source $HOME/bin/solarized-switch.sh $SOLARIZED
 
 # Encryption / Decryption Functions
@@ -65,9 +65,9 @@ cb() {
 # Copy contents of a file
 function cbf() { cat "$1" | cb; }
 # Copy current working directory
-abbr cbwd="pwd | cb"
+ealias cbwd="pwd | cb"
 # Copy most recent command in bash history
-abbr cbhs="cat $HISTFILE | tail -n 1 | cb"
+ealias cbhs="cat $HISTFILE | tail -n 1 | cb"
 
 
 export LESS=-R

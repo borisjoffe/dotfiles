@@ -32,45 +32,45 @@ bindkey "5C" forward-word
 bindkey "^[[3~" delete-char
 
 
-### Fish-style abbr
+### Fish-style abbr - ealiases
 # Based on https://wiki.math.cmu.edu/iki/wiki/tips/20140625-zsh-expand-alias.html
-typeset -a abbrs
-abbrs=()
+typeset -a ealiases
+ealiases=()
 
-function abbr()
+function ealias()
 {
 	alias $@
-	abbrs+=(${@%%\=*})
+	ealiases+=(${@%%\=*})
 }
 
-function expand-abbr()
+function expand-ealias()
 {
-	if [[ $LBUFFER =~ "(^|[;|&])\s*(${(j:|:)abbrs})\$" ]]; then
+	if [[ $LBUFFER =~ "(^|[;|&])\s*(${(j:|:)ealiases})\$" ]]; then
 		zle _expand_alias
 		zle expand-word
 	fi
 	zle magic-space
 }
 
-function force-expand-abbr()
+function force-expand-ealias()
 {
 	zle _expand_alias
 	zle expand-word
 	zle magic-space
 }
 
-zle -N expand-abbr
-zle -N force-expand-abbr
+zle -N expand-ealias
+zle -N force-expand-ealias
 
-bindkey -M emacs ' '     expand-abbr
-bindkey -M emacs '^\034'  force-expand-abbr # Ctrl-\ forces expansion (regardless of preceding chars - useful for global aliases)
+bindkey -M emacs ' '     expand-ealias
+bindkey -M emacs '^\034'  force-expand-ealias # Ctrl-\ forces expansion (regardless of preceding chars - useful for global aliases)
 bindkey -M emacs '^ '    magic-space     # control-space to bypass completion
 bindkey -M isearch " "   magic-space # normal space during searches
 
-### End abbr
+### End ealiases
 
 source "$HOME/.aliases"
-abbr rr='source ~/.zshrc'
+ealias rr='source ~/.zshrc'
 source "$HOME/.shellrc"
 
 git_prompt() {
