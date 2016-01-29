@@ -30,6 +30,8 @@ bindkey "5D" backward-word
 bindkey "5C" forward-word
 #bindkey "e[3~" delete-char
 bindkey "^[[3~" delete-char
+bindkey "^[[7~" beginning-of-line
+bindkey "^[[8~" end-of-line
 
 
 ### Fish-style abbr - ealiases
