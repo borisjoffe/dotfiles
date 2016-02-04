@@ -30,3 +30,15 @@ set -gx OMF_CONFIG $HOME/.config/omf
 
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
+
+# These were set to '555 yellow' which is invisible in the terminal
+#set -U fish_pager_color_description yellow
+#set -U fish_color_autosuggestion yellow
+
+# From https://wiki.archlinux.org/index.php/Fish#Start_X_at_login
+# start X at login
+if status --is-login
+    if test -z "$DISPLAY" -a $XDG_VTNR -eq 1
+        exec startx -- -keeptty
+    end
+end
