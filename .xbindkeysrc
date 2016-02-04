@@ -45,6 +45,11 @@
     m:0x40 + c:47
     Mod4 + s 
 
+#Hibernate (with locking)
+"suspend.sh hibernate"
+    m:0x40 + c:44
+    Mod4 + h 
+
 #Mute volume
 "amixer -c 0 set Master toggle"
     m:0x0 + c:121
