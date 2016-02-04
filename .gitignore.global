@@ -7,9 +7,11 @@
 tags
 .ctags
 
-# Secrets
+# Secrets / Environment
 *.config
-*env*
+*.env
+test
+env
 *secret*
 .gitignore.local
 .my.cnf*
@@ -19,8 +21,21 @@ tags
 node_modules/
 Gemfile.lock
 
+# Revisions
+patch/
+*.patch
+*.diff
+*.old
+*.orig
+*.new
+bak/
+*.bak
+
+# Ops
+.vagrant/
+
 # Logging / Debugging
 *.log
-*trace*
-*dump*
+*.trace
+*.dump
 nohup.out
