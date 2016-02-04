@@ -1,0 +1,34 @@
+session_name: personal
+windows:
+- focus: 'true'
+  layout: a2b0,89x50,0,0[89x42,0,0,0,89x7,0,43,10]
+  options: {}
+  panes:
+  - vim
+  - focus: 'true'
+  start_directory: /home/boris
+  window_name: fish
+- layout: 7f03,89x50,0,0{44x50,0,0,4,44x50,45,0,8}
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command:
+    - cd /home/boris/bin
+    - git status
+  - shell_command:
+    - cd /home/boris/dev/dotfiles
+    - git status
+  window_name: .files
+- layout: ace4,89x50,0,0,7
+  options: {}
+  panes:
+  - focus: 'true'
+  start_directory: /home/boris
+  window_name: fish
+- layout: ace6,89x50,0,0,9
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+  start_directory: /home/boris
+  window_name: man
