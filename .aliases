@@ -54,6 +54,7 @@ ealias gdns='git diff --name-status'
 ealias gpull='git pull'
 ealias gp='git pull'
 ealias gps='git push'
+ealias gres='git reset'
 
 ealias fh='fish'
 
