@@ -5,6 +5,7 @@ cp -u -R ~/.{*aliases,shellrc,bashrc,screenrc,vimrc,zsh*,tmux*.conf,xbindkeysrc,
 cd $HOME
 cp -u --parents .config/openbox/rc.xml $SCRIPT_DIR
 cp -u --parents .config/flake8 $SCRIPT_DIR
+cp -u --parents .config/redshift.conf $SCRIPT_DIR
 cp -u --parents .config/fish/{functions/,}*.fish $SCRIPT_DIR
 fish -c 'abbr -s > .config/fish/fish-abbr.fish' &
 
