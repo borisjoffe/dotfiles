@@ -17,6 +17,6 @@ function bass
     if set -q __bass_debug
       cat $__script
     end
-    rm -f $__script
+    command rm -f $__script
   end
 end
