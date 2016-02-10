@@ -1,4 +1,7 @@
 function bass
+  # identify fish shell when running in bass
+  set -lx FISH true
+
   if test $argv[1] = '-d'
     set __bass_debug
     set __bash_args $argv[2..-1]
