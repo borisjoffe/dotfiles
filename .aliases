@@ -27,7 +27,7 @@ ealias grep2='grep --color=always -d skip'
 ealias df='df -h'
 ealias free='free -h'
 ealias ps='ps aux'
-ealias psg='ps aux| grep -i'
+#ealias psg='ps aux| grep -i'
 ealias bc='bc -l'
 
 ealias e='vim'
