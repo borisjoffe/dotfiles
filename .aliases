@@ -74,6 +74,7 @@ ealias pacu='pacmatic -Syu'
 ealias pacs='pacmatic -Ss'
 ealias pacqi='pacmatic -Qi'
 ealias pacsi='pacmatic -Si'
+ealias pacr='pacmatic -Rs'
 
 ealias sudo='sudo ' # hack to make aliases work - http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo/22043#22043
 ealias trash='gvfs-trash'
