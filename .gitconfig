@@ -21,7 +21,6 @@
 	dns     = diff --name-status
 	sh      = show
 	stat    = status
-	st      = status
 	s       = status
 	f    	= fetch --tags
 	br      = branch
@@ -38,6 +37,10 @@
 	com     = checkout master
 	pom     = pull origin master
 	psoh    = push origin HEAD
+
+	st      = stash
+	stl     = stash list
+	pop     = pop
 
 	inc     = !git fetch && git log ..FETCH_HEAD
 	out     = !git fetch && git log FETCH_HEAD..
