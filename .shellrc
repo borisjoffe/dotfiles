@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source ~/.env
+source bin/keychain-init.sh
 
 ealias solarized-switch='source $HOME/bin/solarized-switch.sh'
 source $HOME/bin/solarized-switch.sh $SOLARIZED
