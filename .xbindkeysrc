@@ -125,10 +125,20 @@
     m:0x40 + c:41
     Mod4 + u 
 
+#Zim
+"zim"
+    m:0x40 + c:58
+    Mod4 + m 
+
 #Launcher
 "urxvt -geometry 60x3 -name 'run' -e sh"
     m:0x40 + c:65
     Mod4 + space 
+
+#Text Expander
+"text-expand"
+    m:0x4 + c:65
+    Control + space 
 
 #Raise window 1
 "window-raise-toggle.sh 1"
