@@ -16,18 +16,24 @@
 	ci      = commit
 	cia     = commit --amend
 	d       = diff
+	ds      = diff --stat
 	dc    	= diff --cached
+	dcs   	= diff --cached --stat
 	dcns    = diff --cached --name-status
 	dns     = diff --name-status
 	sh      = show
 	stat    = status
 	s       = status
+	ss      = status --short
 	f    	= fetch --tags
 	br      = branch
 	cbr     = rev-parse --abbrev-ref HEAD
 	co      = checkout
 	ls      = log --stat --pretty --abbrev-commit
 	lso     = log --oneline
+	ls1     = log --stat --pretty --abbrev-commit -1
+	ls3     = log --stat --pretty --abbrev-commit -3
+	ls5     = log --stat --pretty --abbrev-commit -5
 
 	mnof    = merge --no-ff
 	mt      = mergetool
@@ -40,7 +46,7 @@
 
 	st      = stash
 	stl     = stash list
-	pop     = pop
+	pop     = stash pop
 
 	inc     = !git fetch && git log ..FETCH_HEAD
 	out     = !git fetch && git log FETCH_HEAD..

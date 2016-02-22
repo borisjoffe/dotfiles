@@ -29,15 +29,22 @@ ealias free='free -h'
 ealias ps='ps aux'
 #ealias psg='ps aux| grep -i'
 ealias bc='bc -l'
+ealias wcl='wc -l'
+ealias eche='echo -e'
 
 ealias e='vim'
-ealias vi='vim'
+ealias vi='vim -p'
+ealias vip='vim -p'
+ealias vir='vim -R'
+ealias vs='vim -S'
+ealias vss='vim -S session.vim'
 
 # TODO: use gitconfig to generate these
 ealias g='git'
 ealias gclone='git clone'
 ealias gcl='git clone'
 ealias gs='git status'
+ealias gss='git status --short'
 ealias gcim='git commit -m'
 ealias gcia='git commit --amend'
 ealias ga='git add -p'
@@ -47,10 +54,11 @@ ealias gls='git ls'
 ealias glso='git log --oneline'
 ealias gsh='git show'
 ealias gd='git diff'
-ealias gbr='git branch'
+ealias gds='git diff --stat'
 ealias gdc='git diff --cached'
 ealias gdcns='git diff --cached --name-status'
 ealias gdns='git diff --name-status'
+ealias gbr='git branch'
 ealias gpull='git pull'
 ealias gp='git pull'
 ealias gps='git push'
@@ -59,6 +67,14 @@ ealias gstash='git stash'
 ealias gst='git stash'
 ealias gstl='git stash list'
 ealias gpop='git stash pop'
+
+ealias tp='tmuxp load'
+ealias tps='tmuxp save'
+
+# fasd - https://github.com/clvv/fasd
+ealias v='f -e vim' # quick opening files with vim
+ealias m='f -e vlc' # quick opening files with vlc
+ealias o='a -e xdg-open' # quick opening files with xdg-open
 
 ealias fh='fish'
 
