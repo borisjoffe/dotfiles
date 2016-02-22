@@ -66,7 +66,7 @@ setopt prompt_subst
 #export PS1=$'\e[0;96m[\e[0m\e[0;1m'$(pwd)$':'$(uname -n)$'\e[0m '
 BLUE="%{$(tput setaf 166)%}"
 RESET="%{$(tput sgr0)%}"
-export PS1="%{$fg_bold[cyan]%}%~ %M%%%{$reset_color%} "
+export PS1="%{$fg_bold[cyan]%}%~ %%%{$reset_color%} "
 export RPS1='%{$fg[yellow]%}$(__prompt_git) %{$reset_color%}%*'
 
 #export PS1=$'\e[0;96m%~ %M%%\e[0m '
