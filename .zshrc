@@ -74,3 +74,12 @@ export RPS1='%{$fg[yellow]%}$(__prompt_git) %{$reset_color%}%*'
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/bin/aws_zsh_completer.sh
+
+
+# Fish-style command predictions
+#autoload predict-on
+#predict-on
+# See: try https://github.com/tarruda/zsh-autosuggestions
+# colors - http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Character-Highlighting
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
