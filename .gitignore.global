@@ -6,6 +6,7 @@
 *.swo
 tags
 .ctags
+session.vim
 
 # Secrets / Environment
 *.config
@@ -19,6 +20,7 @@ env
 # Dev specific
 *.pyc
 node_modules/
+npm-debug.log.*
 Gemfile.lock
 
 # Revisions
