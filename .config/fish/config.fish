@@ -1,5 +1,8 @@
 #!/bin/fish
 
+#setenv LANG en_US.UTF-8
+#setenv LC_ALL en_US.UTF-8
+
 set fish_function_path $fish_function_path $HOME/.config/fish/plugin-foreign-env/functions
 
 bass source ~/.env > /dev/null
@@ -9,9 +12,6 @@ source ~/bin/solarized-switch.fish 1
 # Set universal vars here to prevent being overwritten
 # due to hostname bug: https://github.com/fish-shell/fish-shell/issues/183
 set -U fish_greeting ""
-
-#set -U LANG en-US.UTF-8
-#set -U LC_ALL en-US.UTF-8
 
 # Use below to re-import abbreviations:
 # source ~/code/dotfiles/.config/fish/fish-abbr.fish

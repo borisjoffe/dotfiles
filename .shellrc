@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source ~/.env
 
 ealias solarized-switch='source $HOME/bin/solarized-switch.sh'
@@ -15,15 +17,15 @@ crypt () {
 
 # cd and ls
 cdl() {
-	cd $1;
+	cd "$1";
 	shift;
 	ls $@
 }
 
 # mkdir and cd
 mdcd () {
-	mkdir $1;
-	cd $1;
+	mkdir "$1";
+	cd "$1";
 }
 
 # A shortcut function that simplifies usage of xclip.
