@@ -13,4 +13,3 @@ windows:
   panes:
   - pane
   start_directory: /home/boris
-  window_name: python
