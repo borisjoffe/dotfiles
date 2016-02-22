@@ -80,10 +80,15 @@
     m:0x8 + c:107
     Alt + Print 
 
-#Terminal Fish
-"urxvt -e fish -i"
+#Terminal Default
+"urxvt"
     m:0x40 + c:45
     Mod4 + t 
+
+#Terminal Fish
+"urxvt -e fish -i"
+    m:0x40 + c:42
+    Mod4 + i 
 
 #Terminal Zsh
 "urxvt -e zsh -i"
