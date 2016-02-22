@@ -1,3 +1,6 @@
+set nocompatible
+set nomodeline
+
 "set clipboard=unnamed		"normal keyboard behavior
 set hlsearch
 set showmatch
@@ -14,10 +17,17 @@ set shiftwidth=4
 set smarttab
 set autoindent      " smartindent screws up indenting '#'
 
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=80
+
 set nu!
-set langmap='q,\\,w,.e,pr,yt,fy,gu,ci,ro,lp,/[,=],aa,os,ed,uf,ig,dh,hj,tk,nl,s\\;,-',\\;z,qx,jc,kv,xb,bn,mm,w\\,,v.,z/,[-,]=,\"Q,<W,>E,PR,YT,FY,GU,CI,RO,LP,?{,+},AA,OS,ED,UF,IG,DH,HJ,TK,NL,S:,_\",:Z,QX,JC,KV,XB,BN,MM,W<,V>,Z?	"for dvorak keyboard layout in command mode
+"set langmap='q,\\,w,.e,pr,yt,fy,gu,ci,ro,lp,/[,=],aa,os,ed,uf,ig,dh,hj,tk,nl,s\\;,-',\\;z,qx,jc,kv,xb,bn,mm,w\\,,v.,z/,[-,]=,\"Q,<W,>E,PR,YT,FY,GU,CI,RO,LP,?{,+},AA,OS,ED,UF,IG,DH,HJ,TK,NL,S:,_\",:Z,QX,JC,KV,XB,BN,MM,W<,V>,Z?	"for dvorak keyboard layout in command mode
 set ignorecase
 set smartcase
+
+set wildmenu
 
 set encoding=utf-8
 
@@ -28,6 +38,22 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set foldmethod=indent
 set foldlevel=99
+
+let mapleader=" "
+nmap s :
+"nmap
+
+"let <leader>
+
+"nmap <C-h> <C-w>h
+"nmap <C-j> <C-w>j
+"nmap <C-k> <C-w>k
+"nmap <C-l> <C-w>l
+
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
 
 " https://github.com/dag/vim-fish
 if &shell =~# 'fish$'
@@ -85,8 +111,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_jsxhint_exec = 'eslint'
+"let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_javascript_jsxhint_exec = 'eslint'
+let g:syntastic_javascript_checkers = ['jshint']
 " let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:vim_json_syntax_conceal = 0
@@ -118,6 +145,8 @@ autocmd BufRead,BufNewFile .shellrc\|*.aliases setfiletype sh
 au FileType python setlocal expandtab
 au FileType haskell setlocal expandtab
 
+
+iabbr imp! !important;
 
 "au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
 "au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
