@@ -57,21 +57,18 @@ fi
 . $HOME/.env
 
 . $HOME/bin/solarized-switch.sh $SOLARIZED
-fish -c "source $HOME/bin/solarized-switch.sh $SOLARIZED"
+#fish -c "source $HOME/bin/solarized-switch.sh $SOLARIZED"
 . $HOME/bin/keyboard-init.sh &
-. $HOME/bin/keychain-init.sh &
+#. $HOME/bin/keychain-init.sh &   # breaks X?
 . $HOME/bin/xautolock-init.sh &
 
 lxpanel &
-sh .fehbg &
+[ -f $HOME/.fehbg ] && sh .fehbg &
 redshift -o &
 xbindkeys &
 urxvt &
 workrave &
 rescuetime &
+dualmon-auto &
 
 exec openbox
-
-# Turn on dual monitors if plugged in
-xrandr --current | grep VGA1 > /dev/null
-[ $? ] && dualmon on &
