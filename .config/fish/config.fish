@@ -35,10 +35,7 @@ ssh_agent_start
 #set -U fish_pager_color_description yellow
 #set -U fish_color_autosuggestion yellow
 
-# From https://wiki.archlinux.org/index.php/Fish#Start_X_at_login
-# start X at login
-if status --is-login
-    if test -z "$DISPLAY" -a $XDG_VTNR -eq 1
-        exec startx -- -keeptty
-    end
+if [ -f $HOME/.config/fish/login.fish ]
+	# X login on tty1
+	source $HOME/.config/fish/login.fish
 end
