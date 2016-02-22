@@ -19,10 +19,10 @@ set autoindent      " smartindent screws up indenting '#'
 
 set wrap
 set textwidth=79
-set formatoptions=qrn1
+set formatoptions=qronwtc1
 set colorcolumn=80
 
-set nu!
+set number
 "set langmap='q,\\,w,.e,pr,yt,fy,gu,ci,ro,lp,/[,=],aa,os,ed,uf,ig,dh,hj,tk,nl,s\\;,-',\\;z,qx,jc,kv,xb,bn,mm,w\\,,v.,z/,[-,]=,\"Q,<W,>E,PR,YT,FY,GU,CI,RO,LP,?{,+},AA,OS,ED,UF,IG,DH,HJ,TK,NL,S:,_\",:Z,QX,JC,KV,XB,BN,MM,W<,V>,Z?	"for dvorak keyboard layout in command mode
 set ignorecase
 set smartcase
