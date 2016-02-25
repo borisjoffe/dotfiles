@@ -83,6 +83,7 @@ ealias gstash='git stash'
 ealias gst='git stash'
 ealias gstl='git stash list'
 ealias gpop='git stash pop'
+ealias gmnof='git merge --no-ff'
 
 ealias tp='tmuxp load'
 ealias tps='tmuxp save'
