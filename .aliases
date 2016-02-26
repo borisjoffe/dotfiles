@@ -145,6 +145,7 @@ ealias panel='runsilent lxpanel'
 ealias keepass='runsilent keepassx'
 ealias subl='runsilent subl'
 ealias pithos='runsilent pithos'
+ealias qalc='runsilent qalculate'
 
 ealias runxlock='xautolock-init.sh'
 ealias lock='xautolock -locknow'
