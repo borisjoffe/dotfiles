@@ -9,7 +9,6 @@ ealias ll='ls -lh'
 ealias la='ls -A'
 ealias lla='ls -lhA'
 ealias l='ls -CF'
-ealias lsg='ll | grep -i'
 ealias ..='cd ..'
 ealias 1='cd ..'
 ealias ...='cd ../..'
@@ -42,7 +41,7 @@ ealias hd='head'
 ealias tl='tail'
 ealias tf='tail -f'
 
-ealias e='vim'
+ealias e='vim -p'
 ealias vi='vim -p'
 ealias vip='vim -p'
 ealias vir='vim -R'
@@ -85,6 +84,9 @@ ealias gstl='git stash list'
 ealias gpop='git stash pop'
 ealias gmnof='git merge --no-ff'
 
+ealias t='tmux'
+ealias tn='tmux new -s'
+ealias ta='tmux attach -t'
 ealias tp='tmuxp load'
 ealias tps='tmuxp save'
 
@@ -155,6 +157,11 @@ ealias emulator='runsilent emulator -force-32bit'
 
 # Haskell flags
 ealias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
+
+# Python
+ealias mypys='mypy --silent-imports'
+ealias mypya='mypy --implicit-any'
+ealias mypysa='mypy --silent-imports --implicit-any'
 
 if [ $ZSH_NAME ]; then
 	ealias rh='rehash'
