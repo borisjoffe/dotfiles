@@ -19,7 +19,7 @@ set autoindent      " smartindent screws up indenting '#'
 
 set wrap
 set textwidth=79
-set formatoptions=qronwtc1
+set formatoptions=qronwc1
 set colorcolumn=80
 
 set number
