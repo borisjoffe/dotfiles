@@ -163,6 +163,9 @@ ealias mypys='mypy --silent-imports'
 ealias mypya='mypy --implicit-any'
 ealias mypysa='mypy --silent-imports --implicit-any'
 
+# Node
+ealias tsj='tsc --allowJs'
+
 if [ $ZSH_NAME ]; then
 	ealias rh='rehash'
 
