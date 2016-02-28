@@ -91,7 +91,7 @@ ealias t='tmux'
 ealias tn='tmux new -s'
 ealias ta='tmux attach -t'
 ealias tp='tmuxp load'
-ealias tps='tmuxp save'
+ealias tps='tmuxp freeze'
 
 # fasd - https://github.com/clvv/fasd
 ealias v='f -e vim' # quick opening files with vim
