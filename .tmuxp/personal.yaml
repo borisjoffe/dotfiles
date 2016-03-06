@@ -4,7 +4,7 @@ windows:
   layout: a2b0,89x50,0,0[89x42,0,0,0,89x7,0,43,10]
   options: {}
   panes:
-  - vim -p ~/.tmuxp/personal.yaml
+  - vim -p ~/.tmuxp/personal.yaml ~/.aliases ~/.vimrc
   - focus: 'true'
   start_directory: /home/boris
   window_name: fish
