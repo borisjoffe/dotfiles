@@ -169,6 +169,13 @@ ealias emulator='runsilent emulator -force-32bit'
 # Haskell flags
 ealias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
 
+# npm
+ealias npl='npml'
+ealias npi='npml i'
+ealias npr='npm run'
+ealias npt='npm run test'
+ealias nplt='npm run lint'
+
 # Python
 ealias mypys='mypy --silent-imports'
 ealias mypya='mypy --implicit-any'
