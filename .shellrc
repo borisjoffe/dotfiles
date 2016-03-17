@@ -20,7 +20,7 @@ crypt () {
 
 # cd and ls
 cdl() {
-	cd "$1";
+	cd "$1" || return
 	shift;
 	ls $@
 }
@@ -28,7 +28,7 @@ cdl() {
 # mkdir and cd
 mdcd () {
 	mkdir "$1";
-	cd "$1";
+	cd "$1" || return
 }
 
 # A shortcut function that simplifies usage of xclip.
