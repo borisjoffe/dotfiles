@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ $ZSH_NAME ]; then
+	[ -f "$HOME/.ealias.zsh" ] && source "$HOME/.ealias.zsh"
+else
+	alias ealias='alias'
+fi
+
 # Aliases
 ealias cl='clear'
 ealias rs='reset'
