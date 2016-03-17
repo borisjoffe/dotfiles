@@ -35,11 +35,8 @@ bindkey "^[[1~" beginning-of-line # tmux
 bindkey "^[[8~" end-of-line
 bindkey "^[[4~" end-of-line # tmux
 
-source "$HOME/.ealias.zsh"
-
-source "$HOME/.aliases"
-ealias rr='source ~/.zshrc'
 source "$HOME/.shellrc"
+ealias rr='source ~/.zshrc'
 
 git_prompt() {
  ref=$(git symbolic-ref HEAD | cut -d'/' -f3)
