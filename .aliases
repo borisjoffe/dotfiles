@@ -212,6 +212,9 @@ if [ $ZSH_NAME ]; then
 	hash -d bin=~/bin
 fi
 
+# Re-source this file (NOTE: won't remove deleted aliases)
+ealias ra="source $0"
+
 # Debian aliases
 ealias install='sudo apt-get install'
 ealias search='apt-cache search'
