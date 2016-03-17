@@ -4,4 +4,6 @@
 !.config/**/*
 !.env
 
+**/nohup.out
+
 *secret*
