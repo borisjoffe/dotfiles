@@ -206,6 +206,10 @@ if [ $ZSH_NAME ]; then
 	ealias -g nxa='/etc/nginx/sites-available'
 	ealias -g nxe='/etc/nginx/sites-enabled'
 	ealias -g VL='/var/log'
+
+	hash -d dot=~/dev/dotfiles
+	hash -d src=/data/src
+	hash -d bin=~/bin
 fi
 
 # Debian aliases
