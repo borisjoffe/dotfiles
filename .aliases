@@ -83,6 +83,7 @@ ealias gdc='git diff --cached'
 ealias gdcns='git diff --cached --name-status'
 ealias gdns='git diff --name-status'
 ealias gbr='git branch'
+ealias gcbr='git rev-parse --abbrev-ref HEAD' # current branch
 ealias gco='git checkout'
 ealias gcob='git checkout -b'
 ealias gf='git fetch'
