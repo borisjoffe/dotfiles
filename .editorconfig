@@ -27,6 +27,13 @@ indent_size = 4
 indent_style = space
 indent_size = 4
 
+[*.json]
+indent_style = space
+
+[package.json]
+indent_style = space
+indent_size = 2
+
 #[*.{html,jade}]
 #indent_style = tab
 #indent_size = 4
