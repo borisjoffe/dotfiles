@@ -13,13 +13,6 @@
 #   of text against a Perl regular expression.  This is only for
 #   the --type-add option.
 
-# Boris
---smart-case
-#--ignore-directory=is:env
---ignore-directory=is:bak
---ignore-file=match:tags
---ignore-file=ext:log
-
 ### Directories to ignore
 
 # Bazaar
@@ -402,3 +395,12 @@
 # YAML
 # http://yaml.org/
 --type-add=yaml:ext:yaml,yml
+
+# Boris
+--smart-case
+#--ignore-directory=is:env
+--ignore-directory=is:bak
+--ignore-file=match:tags
+--ignore-file=ext:log
+
+--type-add=html:ext:hbs
