@@ -146,7 +146,22 @@ au FileType python setlocal expandtab
 au FileType haskell setlocal expandtab
 
 
+" Abbreviations
 iabbr imp! !important;
+iabbr cl console.log(
+iabbr lgt logger.trace(
+iabbr lgd logger.debug(
+iabbr lgi logger.info(
+iabbr r( = require('
+iabbr jo = Joi.
+iabbr jos = Joi.string().
+iabbr joo = Joi.object().
+iabbr joa = Joi.array().
+iabbr jopt = .options(joiOptions)
+
+" Emmet - https://github.com/mattn/emmet-vim
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 "au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
 "au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
