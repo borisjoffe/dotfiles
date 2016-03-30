@@ -168,6 +168,7 @@ ealias qalc='runsilent qalculate'
 ealias dropstart='runsilent dropbox-cli start'
 ealias dropstop='runsilent dropbox-cli stop'
 ealias dropback='dropbox-backup.sh'
+ealias dropshare='dropbox-cli sharelink'
 
 ealias runxlock='nohup xautolock-init.sh &'
 ealias lock='xautolock -locknow'
