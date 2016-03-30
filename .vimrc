@@ -142,6 +142,7 @@ autocmd BufRead,BufNewFile *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
 autocmd BufRead,BufNewFile *.md\|*.markdown setlocal filetype=ghmarkdown
 autocmd BufRead,BufNewFile .shellrc\|*.aliases setfiletype sh
 
+au FileType javascript setlocal smartindent
 au FileType python setlocal expandtab
 au FileType haskell setlocal expandtab
 
