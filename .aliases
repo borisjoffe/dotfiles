@@ -182,9 +182,17 @@ ealias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
 # npm
 ealias npl='npml'
 ealias npi='npml i'
+ealias ni='npml i'
+ealias nis='npml i -S' # save
+ealias nisd='npml i -D' # save-dev
 ealias npr='npm run --silent'
-ealias npt='npm run --silent test'
+ealias nr='npm run --silent'
+ealias npt='npm test'
+ealias nt='npm test'
+ealias npwt='npm run --silent watch-test'
+ealias nwt='npm run --silent watch-test'
 ealias nplt='npm run --silent lint'
+ealias nlt='npm run --silent lint'
 
 # Python
 ealias mypys='mypy --silent-imports'
