@@ -110,6 +110,9 @@ disp () {
 
 eval "$(fasd --init auto)"
 
+# Stops Ctrl-S from suspending output to allow forward history search instead
+stty -ixon
+
 #source ~/bin/resty
 
 # OPAM configuration
