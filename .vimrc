@@ -148,21 +148,39 @@ au FileType haskell setlocal expandtab
 
 
 " Abbreviations
-iabbr imp! !important;
+
+"" Abbreviations:JS
 iabbr cl console.log(
+iabbr cla console.log('ARGUMENTS:', arguments);
+iabbr jst JSON.stringify(
+iabbr jsp JSON.parse(
+iabbr clok console.log(Object.keys(
+iabbr ok Object.keys(
+iabbr tpo typeof
+iabbr r( = require('
+
+iabbr co return co(function* () {})
+iabbr cob return co(function* () {}.bind(this))
+
 iabbr lgt logger.trace(
 iabbr lgd logger.debug(
 iabbr lgi logger.info(
-iabbr r( = require('
+iabbr lgw logger.warn(
+iabbr lge logger.error(
+iabbr lgf logger.fatal(
+
 iabbr jo = Joi.
 iabbr jos = Joi.string().
 iabbr joo = Joi.object().
 iabbr joa = Joi.array().
 iabbr jopt = .options(joiOptions)
 
+"" Abbreviations:CSS
+iabbr imp! !important;
+
 " Emmet - https://github.com/mattn/emmet-vim
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,hbs,css EmmetInstall
 
 "au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
 "au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
