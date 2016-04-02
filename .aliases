@@ -181,15 +181,32 @@ ealias emulator='runsilent emulator -force-32bit'
 ealias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
 
 # npm
+if [ -f ~/.npm_lazy.config.js ]; then
+	registry=$(grep externalUrl ~/.npm_lazy.config.js | awk '{print $2}' | tr -d "',")
+	ealias npmreg="npm --registry=$registry"
+fi
+ealias np='npml'
 ealias npl='npml'
+
 ealias npi='npml i'
 ealias ni='npml i'
+ealias npig='npml i -g'
+ealias nig='npml i -g'
 ealias nis='npml i -S' # save
 ealias nisd='npml i -D' # save-dev
-ealias npr='npm run --silent'
-ealias nr='npm run --silent'
-ealias npt='npm test'
-ealias nt='npm test'
+
+ealias nrm='npml rm'
+ealias nrmg='npml rm -g'
+
+ealias npr='npm run'
+ealias nr='npm run'
+ealias nprs='npm run --silent'
+ealias nrs='npm run --silent'
+
+ealias ns='npm start'
+
+ealias npt='npm test --silent'
+ealias nt='npm test --silent'
 ealias npwt='npm run --silent watch-test'
 ealias nwt='npm run --silent watch-test'
 ealias nplt='npm run --silent lint'
