@@ -183,7 +183,7 @@ ealias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
 # npm
 if [ -f ~/.npm_lazy.config.js ]; then
 	registry=$(grep externalUrl ~/.npm_lazy.config.js | awk '{print $2}' | tr -d "',")
-	ealias npmreg="npm --registry=$registry"
+	ealias npmr="npm --registry=$registry"
 fi
 ealias np='npml'
 ealias npl='npml'
@@ -204,6 +204,7 @@ ealias nprs='npm run --silent'
 ealias nrs='npm run --silent'
 
 ealias ns='npm start'
+ealias nd='npm run --silent dev'
 
 ealias npt='npm test --silent'
 ealias nt='npm test --silent'
