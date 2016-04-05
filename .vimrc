@@ -206,8 +206,8 @@ iabbr jopt = .options(joiOptions)
 iabbr imp! !important;
 
 " Emmet - https://github.com/mattn/emmet-vim
-let g:user_emmet_install_global = 0
-autocmd FileType html,hbs,css EmmetInstall
+" let g:user_emmet_install_global = 0
+" autocmd FileType html,html.handlebars,css EmmetInstall
 
 "au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
 "au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
