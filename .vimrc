@@ -158,7 +158,8 @@ iabbr clok console.log(Object.keys(
 iabbr Ok Object.keys(
 iabbr tpo typeof
 
-iabbr r( = require('
+iabbr r( require('
+iabbr =r( = require('
 iabbr rfs const fs = require('fs');
 iabbr ras const assert = require('assert');
 iabbr ros const os = require('os');
@@ -172,14 +173,14 @@ iabbr d( describe('
 iabbr i( it('
 iabbr fn function
 iabbr f( function (
-iabbr fg( function* (
-iabbr fg function* () {}
+iabbr f*( function* (
+iabbr f* function* () {}
 iabbr fd( function (done) {
 iabbr ,f( , function (
 iabbr ,fd( , function (done) {
 
-iabbr co return co(function* () {})
-iabbr cob return co(function* () {}.bind(this))
+iabbr co return co(function* () {});
+iabbr cob return co(function* () {}.bind(this));
 
 iabbr lgt logger.trace(
 iabbr lgd logger.debug(
