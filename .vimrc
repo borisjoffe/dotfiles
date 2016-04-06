@@ -172,18 +172,29 @@ iabbr rmo const moment = require('moment');
 iabbr rj const Joi = require('joi');
 iabbr rco const co = require('co');
 
-iabbr d( describe('
-iabbr i( it('
-iabbr fn function
+iabbr fn function () {}
+iabbr fn) function () {});
 iabbr f( function (
 iabbr f*( function* (
 iabbr f* function* () {}
+iabbr f*) function* () {});
 iabbr fd( function (done) {
+iabbr fd function (done) {});
 iabbr ,f( , function (
 iabbr ,fd( , function (done) {
 
+" Testing
+iabbr d( describe('
+iabbr d) describe('', function () {});
+iabbr it( it('
+iabbr it) it('', function (done) {});
+iabbr before) before(function (done) {});
+iabbr after) after(function (done) {});
+iabbr dn done();
+
 iabbr co return co(function* () {});
 iabbr cob return co(function* () {}.bind(this));
+iabbr cotc return co(function* () {}).then(done).catch(done);
 
 iabbr lgt logger.trace(
 iabbr lgd logger.debug(
@@ -196,11 +207,12 @@ iabbr aok assert.ok(
 iabbr aeq assert.equal(
 iabbr ade assert.deepEqual(
 
-iabbr jo = Joi.
-iabbr jos = Joi.string().
-iabbr joo = Joi.object().
-iabbr joa = Joi.array().
-iabbr jopt = .options(joiOptions)
+iabbr jo Joi.
+iabbr ja Joi.assert(
+iabbr jos Joi.string()
+iabbr joo Joi.object()
+iabbr joa Joi.array()
+iabbr jopt .options(joiOptions);
 
 "" Abbreviations:CSS
 iabbr imp! !important;
