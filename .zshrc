@@ -86,3 +86,8 @@ if [ `tty` =~ '/dev/tty' ]; then
 else
 	export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=11'
 fi
+
+# Clients
+for f in ~/c/*/env; do
+	source "$f"
+done
