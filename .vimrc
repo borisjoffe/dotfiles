@@ -241,16 +241,16 @@ autocmd FileType gitcommit setlocal spell
 "autocmd FileType workout setlocal nospell
 
 " copy/paste
-command -range Cz :silent :<line1>,<line2>w !xsel -i -b
-command -range Cx :silent :<line1>,<line2>w !xsel -i -p
-command -range Cv :silent :<line1>,<line2>w !xsel -i -s
+command! -range Cz :silent :<line1>,<line2>w !xsel -i -b
+command! -range Cx :silent :<line1>,<line2>w !xsel -i -p
+command! -range Cv :silent :<line1>,<line2>w !xsel -i -s
 cabbrev cv Cv
 cabbrev cz Cz
 cabbrev cx Cx
 
-command -range Pz :silent :r !xsel -o -b
-command -range Px :silent :r !xsel -o -p
-command -range Pv :silent :r !xsel -o -s
+command! -range Pz :silent :r !xsel -o -b
+command! -range Px :silent :r !xsel -o -p
+command! -range Pv :silent :r !xsel -o -s
 
 cabbrev pz Pz
 cabbrev px Px
@@ -262,3 +262,5 @@ cabbrev pv Pv
 "\ | execute ':redraw!'
 
 command! Adoc :silent execute '!asciidoc %' | redraw!
+
+command! R :silent :source ~/.vimrc
