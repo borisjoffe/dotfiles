@@ -98,6 +98,7 @@ ealias gstl='git stash list'
 ealias gpop='git stash pop'
 ealias gmnof='git merge --no-ff'
 ealias grem='git remote'
+ealias grv='git remote -v'
 
 ealias t='tmux'
 ealias tn='tmux new -s'
