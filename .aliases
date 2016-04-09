@@ -97,6 +97,7 @@ ealias gst='git stash'
 ealias gstl='git stash list'
 ealias gpop='git stash pop'
 ealias gmnof='git merge --no-ff'
+ealias gm='git merge'
 ealias grem='git remote'
 ealias grv='git remote -v'
 
