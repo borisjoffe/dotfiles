@@ -155,6 +155,7 @@ au FileType haskell setlocal expandtab
 "" Abbreviations:JS
 iabbr cl console.log(
 iabbr cla console.log('ARGUMENTS:', arguments);
+iabbr d; debugger;
 iabbr jst JSON.stringify(
 iabbr jsp JSON.parse(
 iabbr clok console.log(Object.keys(
@@ -166,17 +167,18 @@ iabbr =r( = require('
 iabbr rfs const fs = require('fs');
 iabbr ras const assert = require('assert');
 iabbr ros const os = require('os');
-iabbr rlg const logger = require('logger').getLogger(';
+iabbr rlg const logger = require('log4js').getLogger('
 iabbr r_ const _ = require('lodash');
 iabbr rmo const moment = require('moment');
 iabbr rj const Joi = require('joi');
 iabbr rco const co = require('co');
 
+iabbr us; 'use strict';
 iabbr fn function () {}
 iabbr fn) function () {});
 iabbr f( function (
-iabbr f*( function* (
-iabbr f* function* () {}
+inoreabbr f* function* () {}
+inoreabbr f*( function* (
 iabbr f*) function* () {});
 iabbr fd( function (done) {
 iabbr fd function (done) {});
@@ -185,11 +187,11 @@ iabbr ,fd( , function (done) {
 
 " Testing
 iabbr d( describe('
-iabbr d) describe('', function () {});
+iabbr dsfn) describe('', function () {});
 iabbr it( it('
-iabbr it) it('', function (done) {});
-iabbr before) before(function (done) {});
-iabbr after) after(function (done) {});
+iabbr itfn) it('', function (done) {done();});
+iabbr bfn) before(function (done) {done();});
+iabbr afn) after(function (done) {done();});
 iabbr dn done();
 
 iabbr co return co(function* () {});
