@@ -123,12 +123,12 @@ let g:syntastic_python_checkers = ['flake8']
 autocmd BufRead,BufNewFile,BufWritePost *.py :if getline(1) =~# '^#!.*python2' | let g:syntastic_python_flake8_exec = 'flake8-python2' | endif
 
 "let g:syntastic_html_tidy_exec = ''
-"let g:syntastic_html_tidy_exec = 'tidy'
+let g:syntastic_html_tidy_exec = 'tidy'
 "fix config file not working
-"let g:syntastic_html_tidy_args = '-config /home/boris/.tidyrc'
+let g:syntastic_html_tidy_args = '-config /home/boris/.tidyrc'
 "['tidy']
 " temporarily disable until config file works
-let g:syntastic_html_checkers = []
+let g:syntastic_html_checkers = ['tidy']
 
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
