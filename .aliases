@@ -184,7 +184,8 @@ ealias lock='xautolock -locknow'
 ealias emulator='runsilent emulator -force-32bit'
 
 # Haskell flags
-ealias ghc='ghc -fwarn-incomplete-patterns -fwarn-name-shadowing'
+ealias ghc='ghc -Wall -fwarn-incomplete-patterns -fwarn-name-shadowing'
+ealias ghci='ghci -Wall -fwarn-incomplete-patterns -fwarn-name-shadowing'
 
 # npm
 if [ -f ~/.npm_lazy.config.js ]; then
