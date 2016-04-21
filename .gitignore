@@ -1,10 +1,12 @@
-*.swp
-
 !.config/
 !.config/**/*
 !.env
+!.gtkrc-2.0*
 
 **/nohup.out
-
 *secret*
+
 .config/zim/accelmap
+
+*.swp
+
