@@ -38,6 +38,8 @@ alias grepi='grep --color=always -i'
 alias grep2='grep --color=always -d skip'
 
 ealias df='df -h'
+ealias dus='du -chs'
+ealias du1s='du -chd1 | sort -h'
 ealias free='free -h'
 ealias ps='ps aux'
 #ealias psg='ps aux| grep -i'
