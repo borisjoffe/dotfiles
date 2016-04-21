@@ -190,7 +190,8 @@ ealias ghci='ghci -Wall -fwarn-incomplete-patterns -fwarn-name-shadowing'
 # npm
 if [ -f ~/.npm_lazy.config.js ]; then
 	registry=$(grep externalUrl ~/.npm_lazy.config.js | awk '{print $2}' | tr -d "',")
-	ealias npmr="npm --registry=$registry"
+	ealias npmr="npm --registry=$registry"                    # client
+	ealias npm_lazy='npm_lazy --config ~/.npm_lazy.config.js' # server
 fi
 ealias np='npml'
 ealias npl='npml'
