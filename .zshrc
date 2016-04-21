@@ -87,6 +87,8 @@ else
 	export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=11'
 fi
 
+source ~/bin/zsh-autoenv/autoenv.zsh
+
 # Clients
 for f in ~/c/*/env; do
 	source "$f"
