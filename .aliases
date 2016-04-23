@@ -223,6 +223,8 @@ ealias nwt='npm run --silent watch-test'
 ealias nplt='npm run --silent lint'
 ealias nlt='npm run --silent lint'
 
+ealias grs='grunt serve'
+
 # Python
 ealias mypys='mypy --silent-imports'
 ealias mypya='mypy --implicit-any'
