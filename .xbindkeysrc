@@ -142,8 +142,8 @@
 
 #Text Expander
 "text-expand"
-    m:0x4 + c:65
-    Control + space 
+    m:0x0 + c:69
+    F3 
 
 #Raise window 1
 "window-raise-toggle.sh 1"
@@ -199,6 +199,11 @@
 "dmenu_run"
     m:0x40 + c:36
     Mod4 + Return 
+
+#xbindkeys
+"xbindkeys_config"
+    m:0x40 + c:28
+    Mod4 + y 
 
 #
 # End of xbindkeys configuration
