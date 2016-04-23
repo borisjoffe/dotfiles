@@ -213,6 +213,7 @@ iabbr ade assert.deepEqual(
 iabbr jo Joi.
 iabbr ja Joi.assert(
 iabbr jos Joi.string()
+iabbr jno Joi.number()
 iabbr joo Joi.object()
 iabbr joa Joi.array()
 iabbr jopt .options(joiOptions);
