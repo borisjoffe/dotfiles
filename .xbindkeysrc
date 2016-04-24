@@ -8,23 +8,23 @@
 # The pound(#) symbol may be used anywhere for comments.
 #
 # A list of keys is in /usr/include/X11/keysym.h and in
-# /usr/include/X11/keysymdef.h 
-# The XK_ is not needed. 
+# /usr/include/X11/keysymdef.h
+# The XK_ is not needed.
 #
-# List of modifier (on my keyboard): 
-#   Control, Shift, Mod1 (Alt), Mod2 (NumLock), 
-#   Mod3 (CapsLock), Mod4, Mod5 (Scroll). 
+# List of modifier (on my keyboard):
+#   Control, Shift, Mod1 (Alt), Mod2 (NumLock),
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
 #
-# Another way to specifie a key is to use 'xev' and set the 
-# keycode with c:nnn or the modifier with m:nnn where nnn is 
-# the keycode or the state returned by xev 
+# Another way to specifie a key is to use 'xev' and set the
+# keycode with c:nnn or the modifier with m:nnn where nnn is
+# the keycode or the state returned by xev
 #
-# This file is created by xbindkey_config 
-# The structure is : 
-# # Remark 
-# "command" 
-# m:xxx + c:xxx 
-# Shift+... 
+# This file is created by xbindkey_config
+# The structure is :
+# # Remark
+# "command"
+# m:xxx + c:xxx
+# Shift+...
 
 
 
@@ -37,173 +37,48 @@
 
 #Lock Screen
 "locknow.sh"
-    m:0x40 + c:33
-    Mod4 + l 
+    m:0xc + c:33
+    Control+Alt + l
 
 #Suspend (with locking)
 "suspend.sh"
-    m:0x40 + c:47
-    Mod4 + s 
-
-#Hibernate (with locking)
-"suspend.sh hibernate"
-    m:0x40 + c:44
-    Mod4 + h 
+    m:0xc + c:47
+    Control+Alt + s
 
 #Mute volume
 "amixer -c 0 set Master toggle"
     m:0x0 + c:121
-    XF86AudioMute 
+    XF86AudioMute
 
 #Raise volume
 "amixer -c 0 set Master 5+"
     m:0x0 + c:123
-    XF86AudioRaiseVolume 
+    XF86AudioRaiseVolume
 
 #Lower volume
 "amixer -c 0 set Master 5-"
     m:0x0 + c:122
-    XF86AudioLowerVolume 
+    XF86AudioLowerVolume
 
 #Screenshot Full Screen (Multimonitor)
 "redshift -x; cd ~; scrot --multidisp; notify.sh "Desktop screenshot successful""
     m:0x0 + c:107
-    Print 
+    Print
 
 #Screenshot - Select region
 "redshift -x; pkill redshift; cd ~; TIMEOUT=1000 notify.sh "Select a region"; scrot --select; notify.sh "Selection screenshot successful"; nohup redshift -o"
     m:0x1 + c:107
-    Shift + Print 
+    Shift + Print
 
 #Screenshot focused window
 "redshift -x; cd ~; scrot --focused; notify.sh "Window screenshot successful""
     m:0x8 + c:107
-    Alt + Print 
-
-#Terminal Default
-"urxvt"
-    m:0x40 + c:45
-    Mod4 + t 
-
-#Terminal Fish
-"urxvt -e fish -i"
-    m:0x40 + c:42
-    Mod4 + i 
-
-#Terminal Zsh
-"urxvt -e zsh -i"
-    m:0x40 + c:61
-    Mod4 + z 
-
-#Terminal Bash
-"urxvt -e bash -i"
-    m:0x40 + c:57
-    Mod4 + b 
-
-#File Manager
-"pcmanfm"
-    m:0x40 + c:29
-    Mod4 + f 
-
-#Chrome
-"chromium"
-    m:0x40 + c:31
-    Mod4 + c 
-
-#KeePassX
-"keepassx"
-    m:0x40 + c:55
-    Mod4 + k 
-
-#Firefox
-"firefox -no-remote"
-    m:0x40 + c:56
-    Mod4 + x 
-
-#Leafpad Editor
-"leafpad"
-    m:0x40 + c:46
-    Mod4 + n 
-
-#Sublime Text 2
-"subl"
-    m:0x40 + c:41
-    Mod4 + u 
-
-#Zim
-"zim"
-    m:0x40 + c:58
-    Mod4 + m 
-
-#Launcher
-"urxvt -geometry 60x3 -name 'run' -e sh"
-    m:0x40 + c:65
-    Mod4 + space 
+    Alt + Print
 
 #Text Expander
 "text-expand"
     m:0x0 + c:69
-    F3 
-
-#Raise window 1
-"window-raise-toggle.sh 1"
-    m:0x40 + c:10
-    Mod4 + 1 
-
-#Raise window 2
-"window-raise-toggle.sh 2"
-    m:0x40 + c:11
-    Mod4 + 2 
-
-#Raise window 3
-"window-raise-toggle.sh 3"
-    m:0x40 + c:12
-    Mod4 + 3 
-
-#Raise window 4
-"window-raise-toggle.sh 4"
-    m:0x40 + c:13
-    Mod4 + 4 
-
-#Raise window 5
-"window-raise-toggle.sh 5"
-    m:0x40 + c:14
-    Mod4 + 5 
-
-#Raise window 6
-"window-raise-toggle.sh 6"
-    m:0x40 + c:15
-    Mod4 + 6 
-
-#Raise window 7
-"window-raise-toggle.sh 7"
-    m:0x40 + c:16
-    Mod4 + 7 
-
-#Raise window 8
-"window-raise-toggle.sh 8"
-    m:0x40 + c:17
-    Mod4 + 8 
-
-#Raise window 9
-"window-raise-toggle.sh 9"
-    m:0x40 + c:18
-    Mod4 + 9 
-
-#Raise last window
-"window-raise-toggle.sh 0"
-    m:0x40 + c:19
-    Mod4 + 0 
-
-#dmenu
-"dmenu_run"
-    m:0x40 + c:36
-    Mod4 + Return 
-
-#xbindkeys
-"xbindkeys_config"
-    m:0x40 + c:28
-    Mod4 + y 
+    F3
 
 #
 # End of xbindkeys configuration
