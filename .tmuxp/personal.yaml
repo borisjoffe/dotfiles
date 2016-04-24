@@ -7,7 +7,6 @@ windows:
   - vim -p ~/.tmuxp/personal.yaml ~/.aliases ~/.vimrc
   - focus: 'true'
   start_directory: /home/boris
-  window_name: fish
 - layout: 7f03,89x50,0,0{44x50,0,0,4,44x50,45,0,8}
   options: {}
   panes:
@@ -19,12 +18,15 @@ windows:
     - cd /home/boris/dev/dotfiles
     - git status
   window_name: .files
-- layout: ace4,89x50,0,0,7
+# - layout: ace4,89x50,0,0,7
+- layout: 7f03,89x50,0,0{44x50,0,0,4,44x50,45,0,8}
   options: {}
   panes:
   - focus: 'true'
+    shell_command:
+    - git status
+  -
   start_directory: /home/boris
-  window_name: fish
 - layout: ace6,89x50,0,0,9
   options:
     automatic-rename: 'off'
