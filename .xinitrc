@@ -62,13 +62,13 @@ fi
 #. $HOME/bin/keychain-init.sh &   # breaks X?
 . $HOME/bin/xautolock-init.sh &
 
-lxpanel &
+#lxpanel &
 [ -f $HOME/.fehbg ] && sh .fehbg &
 redshift -o &
 xbindkeys &
-urxvt &
+#urxvt &
 workrave &
 rescuetime &
 dualmon-auto &
 
-exec openbox
+exec i3
