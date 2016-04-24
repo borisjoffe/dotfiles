@@ -8,9 +8,9 @@ Global {
   widthtype=percent
   width=100
   height=26
-  transparent=0
-  tintcolor=#ff7a00
-  alpha=132
+  transparent=1
+  tintcolor=#000000
+  alpha=255
   setdocktype=1
   setpartialstrut=1
   usefontcolor=0
@@ -87,6 +87,9 @@ Plugin {
     FlatButton=0
     MaxTaskWidth=150
     spacing=1
+    SameMonitorOnly=0
+    GroupedTasks=0
+    DisableUpscale=0
   }
 }
 Plugin {
