@@ -1,11 +1,12 @@
 #!/usr/bin/zsh
 
-SCRIPT_DIR=`pwd`
-
 set -ueo pipefail
-cd $HOME
 
 DBG=${DBG:-}
+
+SCRIPT_DIR=`pwd`
+
+cd $HOME
 
 typeset -a dotfiles
 dotfiles=(
