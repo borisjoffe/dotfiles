@@ -156,6 +156,8 @@ au FileType haskell setlocal expandtab
 "" Abbreviations:JS
 iabbr cl console.log(
 iabbr cla console.log('ARGUMENTS:', arguments);
+iabbr cw console.warn(
+iabbr ce console.error(
 iabbr d; debugger;
 iabbr jst JSON.stringify(
 iabbr jsp JSON.parse(
