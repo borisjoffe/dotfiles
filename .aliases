@@ -50,7 +50,7 @@ ealias eche='echo -e'
 ealias hd='head'
 ealias tl='tail'
 ealias tf='tail -f'
-ealias cal='cal -m'
+ealias cal='cal -mw'
 
 ealias e='vim -p'
 ealias vi='vim -p'
