@@ -177,6 +177,7 @@ ealias music='runsilent pithos'
 ealias slack='runsilent slack'
 ealias qalc='runsilent qalculate'
 ealias upwork='runsilent upwork'
+ealias zim='runsilent zim'
 
 ealias dropstart='runsilent dropbox-cli start'
 ealias dropstop='runsilent dropbox-cli stop'
