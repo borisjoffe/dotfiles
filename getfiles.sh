@@ -28,6 +28,7 @@ dotfiles=(
 	.gitconfig
 	.gitignore.global
 	.ackrc
+	.agignore
 	.npm_lazy.config.js
 	.npmrc
 	.mongorc.js
