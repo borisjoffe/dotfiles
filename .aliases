@@ -58,8 +58,8 @@ ealias vip='vim -p'
 ealias vir='vim -R'
 ealias vs='vim -S'
 ealias vss='vim -S session.vim'
-ealias ven="perl-rename 's/~*$//'"   # enable vim plugin
-ealias vdi="perl-rename 's/~*$/~/'"  # disable vim plugin
+alias ven="perl-rename 's/~*$//'"   # enable vim plugin
+alias vdi="perl-rename 's/~*$/~/'"  # disable vim plugin
 
 # GIT
 # TODO: use gitconfig to generate these
@@ -256,6 +256,7 @@ if [ $ZSH_NAME ]; then
 	hash -d dot=~/dev/dotfiles
 	hash -d src=/data/src
 	hash -d bin=~/bin
+	hash -d vpl=~/.vim/bundle
 fi
 
 # Re-source this file (NOTE: won't remove deleted aliases)
