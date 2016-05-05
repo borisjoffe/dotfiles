@@ -158,6 +158,7 @@ iabbr cl console.log(
 iabbr cla console.log('ARGUMENTS:', arguments);
 iabbr cw console.warn(
 iabbr ce console.error(
+iabbr cdr console.dir(
 iabbr d; debugger;
 iabbr jst JSON.stringify(
 iabbr jsp JSON.parse(
