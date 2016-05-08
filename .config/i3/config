@@ -160,3 +160,5 @@ bar {
 
 #new_window none
 hide_edge_borders both
+
+for_window [instance="^upwork$"] floating disable
