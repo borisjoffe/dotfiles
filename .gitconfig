@@ -29,6 +29,8 @@
 	br      = branch
 	cbr     = rev-parse --abbrev-ref HEAD
 	co      = checkout
+	lg      = log --graph --decorate --oneline --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	lga     = log --graph --decorate --oneline --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	ls      = log --stat --pretty --abbrev-commit
 	lso     = log --oneline
 	ls1     = log --stat --pretty --abbrev-commit -1
