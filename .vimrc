@@ -135,6 +135,11 @@ let g:syntastic_html_checkers = ['tidy']
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 au BufWinEnter * match ExtraWhitespace /\s\+$/
 
+
+set list
+set listchars=tab:——       ",space:·eol:⏎,nbsp:?
+
+
 " ==== FILE TYPE SPECIFIC BEHAVIOR ====
 
 autocmd BufRead,BufNewFile *.es6\|*.jsx\|*.ts setfiletype javascript
