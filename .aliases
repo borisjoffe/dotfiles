@@ -35,6 +35,7 @@ ealias cppreservebackupsrc='cp -r -i --backup=numbered -f --preserve=mode,owners
 
 alias grep='grep --color=always'
 alias grepi='grep --color=always -i'
+alias grepv='grep -v'
 alias grep2='grep --color=always -d skip'
 
 ealias df='df -h'
