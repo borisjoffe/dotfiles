@@ -115,6 +115,7 @@ let g:syntastic_check_on_wq = 0
 "let g:syntastic_javascript_checkers = ['eslint']
 "let g:syntastic_javascript_jsxhint_exec = 'eslint'
 let g:syntastic_javascript_checkers = ['jshint']
+"let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 " let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:vim_json_syntax_conceal = 0
@@ -130,6 +131,9 @@ let g:syntastic_html_tidy_args = '-config /home/boris/.tidyrc'
 "['tidy']
 " temporarily disable until config file works
 let g:syntastic_html_checkers = ['tidy']
+
+" Syntastic is extremely slow with these
+let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss', 'hs'] }
 
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
