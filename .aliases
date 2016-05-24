@@ -258,7 +258,9 @@ if [ $ZSH_NAME ]; then
 	# Global aliases (zsh only)
 	# http://zsh.sourceforge.net/Intro/intro_8.html
 	ealias -g G='| grep'
+	ealias -g Gv='| grep -v'
 	ealias -g Gi='| grep -i'
+	ealias -g Giv='| grep -iv'
 	ealias -g L='| less'
 	ealias -g D='date +%F' # date in the format YYYY-MM-DD
 	ealias -g TEST=' && echo "true" || echo "false"'
