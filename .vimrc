@@ -173,7 +173,7 @@ iabbr d; debugger;
 iabbr jst JSON.stringify(
 iabbr jsp JSON.parse(
 iabbr clok console.log(Object.keys(
-iabbr Ok Object.keys(
+iabbr ok( Object.keys(
 iabbr tpo typeof
 
 iabbr r( require('
