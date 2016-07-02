@@ -1,0 +1,13 @@
+# Two vertical panes with 2 tabs each
+exec urxvt
+exec urxvt
+layout tabbed
+exec urxvt
+move right
+
+exec urxvt
+layout tabbed
+focus left
+focus left
+focus parent
+move left

@@ -1,0 +1,32 @@
+#set $term urxvt
+
+## Primary monitor
+include .config/i3/two-tabbed-vertical-panes
+
+
+## External monitor
+
+focus output VGA1
+#workspace 9
+#layout default
+
+include .config/i3/two-tabbed-vertical-panes
+
+# bottom left container - below is a bit hacky because splitv/splith doesn't
+# work properly
+exec urxvt
+move down
+
+exec urxvt
+layout tabbed
+focus left
+focus left
+focus parent
+focus parent
+move up
+focus child
+focus right
+focus parent
+move right
+resize grow left 30px
+focus child
