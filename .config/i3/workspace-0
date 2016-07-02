@@ -1,0 +1,15 @@
+focus output VGA1
+#workspace 0
+
+include two-tabbed-vertical-panes
+
+# bottom left container
+split vertical
+exec urxvt
+
+split horizontal
+exec urxvt
+layout tabbed
+
+focus right
+resize grow left 30px
