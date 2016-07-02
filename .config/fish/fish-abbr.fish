@@ -31,14 +31,14 @@ abbr paci 'pacmatic --needed -S'
 abbr pacs 'pacmatic -Ss'
 abbr pacsi 'pacmatic -Si'
 abbr pacqi 'pacmatic -Qi'
-abbr dsrc '/data/src'
+abbr dsrc /data/src
 abbr grem 'git remote'
 abbr b bash
 abbr lg llg
 abbr bc 'bc -l'
-abbr nxa '/etc/nginx/sites-available'
-abbr nxe '/etc/nginx/sites-enabled'
-abbr VL '/var/log'
+abbr nxa /etc/nginx/sites-available
+abbr nxe /etc/nginx/sites-enabled
+abbr VL /var/log
 abbr pacu 'sudo pacmatic -Syu'
 abbr mysqli 'mysql --auto-rehash'
 abbr gcl 'git clone'
