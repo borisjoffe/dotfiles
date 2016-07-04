@@ -1,1 +1,4 @@
 include two-tabbed-vertical-panes
+
+focus child
+resize grow right  # FIXME: px args don't seem to have any effect
