@@ -37,6 +37,7 @@ alias grep='grep --color=always'
 alias grepi='grep --color=always -i'
 alias grepv='grep -v'
 alias grep2='grep --color=always -d skip'
+alias grep2i='grep --color=always -d skip -i'
 
 ealias df='df -h'
 ealias dus='du -chs'
