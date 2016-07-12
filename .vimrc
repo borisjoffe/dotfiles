@@ -147,7 +147,7 @@ set listchars=tab:——       ",space:·eol:⏎,nbsp:?
 " ==== FILE TYPE SPECIFIC BEHAVIOR ====
 
 autocmd BufRead,BufNewFile *.es6\|*.jsx\|*.ts setfiletype javascript
-autocmd BufRead,BufNewFile .jshintrc\|.eslintrc  setfiletype json
+autocmd BufRead,BufNewFile .jshintrc\|.eslintrc\|.babelrc  setfiletype json
 autocmd BufRead,BufNewFile *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
 autocmd BufRead,BufNewFile *.md\|*.markdown setlocal filetype=ghmarkdown
 autocmd BufRead,BufNewFile .shellrc\|*.aliases setfiletype sh
