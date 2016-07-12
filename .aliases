@@ -192,7 +192,7 @@ ealias chat='runsilent pidgin'
 ealias subl='runsilent subl'
 ealias music='runsilent pithos'
 ealias slack='runsilent slack'
-ealias qalc='runsilent qalculate'
+ealias qalc='runsilent qalculate-gtk'
 ealias upwork='runsilent upwork'
 ealias zim='runsilent zim'
 
