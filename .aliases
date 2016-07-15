@@ -174,7 +174,7 @@ ealias downloadPdfsOnPage='wget -nH -r -l 1 -H -A pdf'
 ealias lm='lastmod.sh'
 ealias lma='lastmod.sh -A'
 
-ealias mysqli='mysql --auto-rehash'
+ealias file-size='stat -c%s'
 
 
 # GUI programs
@@ -206,8 +206,13 @@ ealias dropshare='dropbox-cli sharelink'
 ealias runxlock='nohup xautolock-init.sh &'
 ealias lock='xautolock -locknow'
 
+ealias caps-toggle='xdotool key Caps_Lock'
+
 # Android
 ealias emulator='runsilent emulator -force-32bit'
+
+# Database
+ealias mysqli='mysql --auto-rehash'
 
 # Haskell flags
 ealias ghc='ghc -Wall -fwarn-incomplete-patterns -fwarn-name-shadowing'
