@@ -170,11 +170,14 @@ ealias downloadPageOneLevel='wget -nH -k -p -r -l 1'
 
 ealias downloadPdfsOnPage='wget -nH -r -l 1 -H -A pdf'
 
+ealias ytf='youtube-dl -F'
+ealias yt='youtube-dl -f webm'
+
 
 ealias lm='lastmod.sh'
 ealias lma='lastmod.sh -A'
 
-ealias file-size='stat -c%s'
+ealias filesize='stat -c%s'
 
 
 # GUI programs
