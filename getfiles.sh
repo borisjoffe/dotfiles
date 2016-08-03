@@ -44,6 +44,7 @@ dotfiles=(
 	.config/lxpanel/default/
 	.config/zim/
 	.config/i3/
+	.config/youtube-dl/
 	.i3status.conf
 )
 

@@ -1,0 +1,5 @@
+--ignore-errors
+--no-mtime
+--write-info-json
+--prefer-free-formats
+--add-metadata
