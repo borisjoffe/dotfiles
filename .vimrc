@@ -279,5 +279,6 @@ cabbrev pv Pv
 "\ | execute ':redraw!'
 
 command! Adoc :silent execute '!asciidoc %' | redraw!
+command! PrettyJson %!python -m json.tool
 
 command! R :silent :source ~/.vimrc
