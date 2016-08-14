@@ -176,6 +176,7 @@ ealias ytf='youtube-dl -F'
 ealias ytd='youtube-dl'
 ealias yt='youtube-dl -f webm'
 
+alias ffprobe='\ffprobe -hide_banner'
 
 ealias lm='lastmod.sh'
 ealias lma='lastmod.sh -A'
