@@ -135,6 +135,8 @@ ealias m='f -e vlc' # quick opening files with vlc
 ealias o='a -e xdg-open' # quick opening files with xdg-open
 
 alias i3m='i3-msg'
+alias i3tt='i3start ~/.config/i3/two-tabbed-vertical-panes'
+alias i3tef='i3start ~/.config/i3/toggle-external-fullscreen'
 
 ealias fh='fish'
 
