@@ -37,6 +37,12 @@ fi
   # ;;
 #esac
 
+function source-if-exists () {
+	local f=${1?source-if-exists requires an argument}
+	[ -n "$DBG" ] && echo "source-if-exists: $f"
+	[ -f "$f" ] && source "$f"
+}
+
 function parse_git_branch () {
 	#git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 	echo " "`git rev-parse --symbolic-full-name --abbrev-ref HEAD`| grep -v fatal | grep -v master$
