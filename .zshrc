@@ -35,6 +35,12 @@ bindkey "^[[1~" beginning-of-line # tmux
 bindkey "^[[8~" end-of-line
 bindkey "^[[4~" end-of-line # tmux
 
+function source-if-exists() {
+	local f=${1?source-if-exists requires an argument}
+	[ -n "$DBG" ] && echo "source-if-exists: $f"
+	[ -f "$f" ] && source "$f"
+}
+
 source "$HOME/.shellrc"
 ealias rr='source ~/.zshrc'
 
@@ -69,8 +75,8 @@ export RPS1='%{$fg[yellow]%}$(__prompt_git) %{$reset_color%}%*'
 #export PS1=$'\e[0;96m%~ %M%%\e[0m '
 #export PS1=$'\e[0;31m$ \e[0m'
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/bin/aws_zsh_completer.sh
+source-if-exists /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source-if-exists /usr/bin/aws_zsh_completer.sh
 
 
 # Fish-style command predictions
@@ -79,7 +85,7 @@ source /usr/bin/aws_zsh_completer.sh
 # See: try https://github.com/tarruda/zsh-autosuggestions
 # colors - http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Character-Highlighting
 # black, red, green, yellow, blue, magenta, cyan and white
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source-if-exists ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 if [ `tty` =~ '/dev/tty' ]; then
 	# can only use one of the 8 base colors in a virtual console
 	export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=magenta'
@@ -87,9 +93,10 @@ else
 	export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=11'
 fi
 
-source ~/bin/zsh-autoenv/autoenv.zsh
+source-if-exists ~/bin/zsh-autoenv/autoenv.zsh
 
-# Clients
+
+# Client environments
 for f in ~/c/*/env; do
-	source "$f"
+	source-if-exists "$f"
 done
