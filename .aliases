@@ -265,6 +265,11 @@ ealias nwt='npm run --silent watch-test'
 ealias nplt='npm run --silent lint'
 ealias nlt='npm run --silent lint'
 
+ealias npv='npm version -m "%s"'
+ealias npva='npm version major -m "%s"'
+ealias npvi='npm version minor -m "%s"'
+ealias npvp='npm version patch -m "%s"'
+
 ealias grunts='grunt serve'
 
 # Python
