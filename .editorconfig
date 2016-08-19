@@ -15,13 +15,13 @@ trim_trailing_whitespace = false
 indent_style = space
 indent_size = 2
 
-#[*.py]
-#indent_style = space
-#indent_size = 4
+[*.py]
+indent_style = space
+indent_size = 4
 
-#[*.{js,es6,jsx,ts}]
-#indent_style = tab
-#indent_size = 4
+[*.{js,es6,jsx,ts}]
+indent_style = tab
+indent_size = 4
 
 [.{jshintrc,eslintrc,.babelrc}]
 indent_style = space
@@ -34,13 +34,13 @@ indent_style = space
 indent_style = space
 indent_size = 2
 
-#[*.{html,jade}]
-#indent_style = tab
-#indent_size = 4
+[*.{html,jade}]
+indent_style = tab
+indent_size = 4
 
-#[*.{css,sass,less,styl,stylus}]
-#indent_style = tab
-#indent_size = 4
+[*.{css,sass,less,styl,stylus}]
+indent_style = tab
+indent_size = 4
 
 [*.elm]
 indent_style = space
