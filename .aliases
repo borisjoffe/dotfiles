@@ -214,6 +214,7 @@ ealias dropstop='runsilent dropbox-cli stop'
 ealias dropback='dropbox-backup.sh'
 ealias droppub='dropbox-cli puburl'
 ealias dropshare='dropbox-cli sharelink'
+ealias dropstat='dropbox-cli status'
 
 ealias runxlock='nohup xautolock-init.sh &'
 ealias lock='xautolock -locknow'
