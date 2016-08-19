@@ -122,6 +122,8 @@ ealias grbc='git rebase --continue'
 ealias grba='git rebase --abort'
 ealias grem='git remote'
 ealias grv='git remote -v'
+ealias gt='git tag'
+ealias gtl='git tag -l'
 
 ealias t='tmux'
 ealias tn='tmux new -s'
