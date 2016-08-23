@@ -140,7 +140,8 @@ highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 au BufWinEnter * match ExtraWhitespace /\s\+$/
 
 
-set list
+set nolist   " tab char too obtrusive. find way to make it more subtle
+"set list
 set listchars=tab:——       ",space:·eol:⏎,nbsp:?
 
 
