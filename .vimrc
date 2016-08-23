@@ -178,16 +178,18 @@ iabbr tpo typeof
 
 iabbr r( require('
 iabbr =r( = require('
-iabbr rfs const fs = require('fs');
-iabbr ras const assert = require('assert');
-iabbr ros const os = require('os');
-iabbr rlg const logger = require('log4js').getLogger('
-iabbr r_ const _ = require('lodash');
-iabbr rmo const moment = require('moment');
-iabbr rj const Joi = require('joi');
-iabbr rco const co = require('co');
+iabbr rfs const fs = require('fs')
+iabbr ras const assert = require('assert')
+iabbr ros const os = require('os')
+iabbr rlg const l = require('log4js').getLogger('
+iabbr r_ const _ = require('lodash')
+iabbr rmo const moment = require('moment')
+iabbr rt) const t = require('tcomb')
+iabbr rj const Joi = require('joi')
+iabbr rco const co = require('co')
 
-iabbr us; 'use strict';
+iabbr us; 'use strict'
+iabbr me= module.exports = () => {return {}}
 iabbr fn function () {}
 iabbr fn) function () {});
 iabbr f( function (
@@ -201,16 +203,16 @@ iabbr ,fd( , function (done) {
 
 " Testing
 iabbr d( describe('
-iabbr dsfn) describe('', function () {});
+iabbr dsfn) describe('', function () {})
 iabbr it( it('
-iabbr itfn) it('', function (done) {done();});
-iabbr bfn) before(function (done) {done();});
-iabbr afn) after(function (done) {done();});
-iabbr dn done();
+iabbr itfn) it('', function (done) {done();})
+iabbr bfn) before(function (done) {done();})
+iabbr afn) after(function (done) {done();})
+iabbr dn done()
 
-iabbr co return co(function* () {});
-iabbr cob return co(function* () {}.bind(this));
-iabbr cotc return co(function* () {}).then(done).catch(done);
+iabbr co( return co(function* () {})
+iabbr cob( return co(function* () {}.bind(this))
+iabbr cotc( return co(function* () {}).then(done).catch(done)
 
 iabbr lgt logger.trace(
 iabbr lgd logger.debug(
