@@ -131,6 +131,7 @@ let g:syntastic_html_tidy_args = '-config /home/boris/.tidyrc'
 "['tidy']
 " temporarily disable until config file works
 let g:syntastic_html_checkers = ['tidy']
+let g:syntastic_haskell_checkers = ['']
 
 " Syntastic is extremely slow with these
 let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss', 'hs'] }
