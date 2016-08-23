@@ -153,6 +153,7 @@ autocmd BufRead,BufNewFile .jshintrc\|.eslintrc\|.babelrc  setfiletype json
 autocmd BufRead,BufNewFile *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
 autocmd BufRead,BufNewFile *.md\|*.markdown setlocal filetype=ghmarkdown
 autocmd BufRead,BufNewFile .shellrc\|*.aliases setfiletype sh
+autocmd BufRead,BufNewFile *.tsv setfiletype tsv
 
 au FileType javascript setlocal smartindent
 au FileType html setlocal smartindent
@@ -160,6 +161,7 @@ au FileType html.handlebars setlocal smartindent
 au FileType css setlocal smartindent
 au FileType python setlocal expandtab
 au FileType haskell setlocal expandtab
+au FileType tsv setlocal ts=13 sw=13 sts=13 nowrap  " nicer tsv columns
 
 
 " Abbreviations
