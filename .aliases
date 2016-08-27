@@ -300,7 +300,7 @@ if [ $ZSH_NAME ]; then
 	ealias -g VL='/var/log'
 	ealias -g VLN='/var/log/nginx'
 
-	ealias nginxlogs="tail -f /var/log/nginx/*.log | grep -iv --color=always NewRelic"
+	ealias nginxlogs="tail -f /var/log/nginx/*.log | grep -iv NewRelicPinger"
 
 	hash -d dot=~/dev/dotfiles
 	hash -d src=/data/src
