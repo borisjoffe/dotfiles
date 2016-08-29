@@ -293,12 +293,10 @@ if [ $ZSH_NAME ]; then
 	ealias -g Giv='| grep -iv'
 	ealias -g L='| less'
 	ealias -g D='date +%F' # date in the format YYYY-MM-DD
+	ealias -g DW='date +%W' # ISO Week
+	ealias -g DYW='date +%Y-W%W-%u' # date in the format <4 digit year>-W<iso week>-<day of week>
 	ealias -g TEST=' && echo "true" || echo "false"'
 
-	ealias -g nxa='/etc/nginx/sites-available'
-	ealias -g nxe='/etc/nginx/sites-enabled'
-	ealias -g VL='/var/log'
-	ealias -g VLN='/var/log/nginx'
 
 	ealias nginxlogs="tail -f /var/log/nginx/*.log | grep -iv NewRelicPinger"
 
@@ -306,6 +304,11 @@ if [ $ZSH_NAME ]; then
 	hash -d src=/data/src
 	hash -d bin=~/bin
 	hash -d vpl=~/.vim/bundle
+
+	hash -d nxa=/etc/nginx/sites-available
+	hash -d nxe=/etc/nginx/sites-enabled
+	hash -d nxl=/var/log/nginx
+	hash -d vl=/var/log
 fi
 
 # Re-source this file (NOTE: won't remove deleted aliases)
