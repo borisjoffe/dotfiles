@@ -126,6 +126,7 @@ ealias gt='git tag'
 ealias gtl='git tag -l'
 
 ealias t='tmux'
+ealias tls='tmux ls'
 ealias tn='tmux new -s'
 ealias ta='tmux attach -t'
 ealias tp='tmuxp load'
