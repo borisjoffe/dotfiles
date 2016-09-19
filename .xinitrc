@@ -64,7 +64,7 @@ fi
 
 #lxpanel &
 [ -f $HOME/.fehbg ] && sh .fehbg &
-redshift -o &
+redshift &
 xbindkeys &
 #urxvt &
 workrave &
