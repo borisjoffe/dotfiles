@@ -9,10 +9,14 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1    # Alt
-set $mod2 Mod4   # Windows
+# Alt
+set $mod Mod1
 
-bindsym $mod+$mod2 exec xdotool key Alt  # Send real Alt key
+# Windows-key
+set $mod2 Mod4
+
+# Send real Alt key
+bindsym $mod+$mod2 exec xdotool key Alt
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
