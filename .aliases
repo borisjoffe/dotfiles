@@ -138,9 +138,11 @@ ealias v='f -e vim' # quick opening files with vim
 ealias m='f -e vlc' # quick opening files with vlc
 ealias o='a -e xdg-open' # quick opening files with xdg-open
 
-alias i3m='i3-msg'
-alias i3tt='i3start ~/.config/i3/two-tabbed-vertical-panes'
-alias i3tef='i3start ~/.config/i3/toggle-external-fullscreen'
+ealias i3m='i3-msg'
+ealias i3tt='i3start ~/.config/i3/two-tabbed-vertical-panes'
+ealias i3tef='i3start ~/.config/i3/toggle-external-fullscreen'
+ealias i3w0='i3start ~/.config/i3/workspace-0'
+ealias i3w1='i3start ~/.config/i3/workspace-1'
 
 ealias fh='fish'
 
