@@ -71,6 +71,7 @@ alias vdi="perl-rename 's/~*$/~/'"  # disable vim plugin
 # GIT
 # TODO: use gitconfig to generate these
 ealias g='git'
+ealias gh='git help'
 ealias gclone='git clone'
 ealias gcl='git clone'
 ealias gs='git status'
