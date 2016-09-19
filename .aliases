@@ -194,6 +194,7 @@ ealias filesize='stat -c%s'
 ealias rdp1='rdesktop -g 1280x800' # laptop screen
 ealias rdp='rdesktop -g 1280x1024' # external monitor
 
+ealias zmtime='find ~/zim/**/*.txt -mtime'
 
 # GUI programs
 #ealias bitcoin-qt='bitcoin-qt -datadir=/data/bitcoin'
