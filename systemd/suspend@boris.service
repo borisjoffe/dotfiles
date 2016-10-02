@@ -1,0 +1,17 @@
+# /etc/systemd/system/suspend@boris.service
+# See https://wiki.archlinux.org/index.php/Power_management#Suspend.2Fresume_service_files
+
+[Unit]
+Description=User suspend actions
+Before=sleep.target
+
+[Service]
+User=%I
+Type=simple
+Environment=DISPLAY=:0
+#ExecStartPre= -/usr/bin/pkill -u %u unison ; /usr/local/bin/music.sh stop ; /usr/bin/mysql -e 'slave stop'
+ExecStart=/usr/bin/xautolock -locknow
+ExecStartPost=/usr/bin/sleep 1
+
+[Install]
+WantedBy=sleep.target
