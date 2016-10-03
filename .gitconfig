@@ -54,6 +54,9 @@
 	inc     = !git fetch && git log ..FETCH_HEAD
 	out     = !git fetch && git log FETCH_HEAD..
 
+	# http://stackoverflow.com/questions/957928/is-there-a-way-to-get-the-git-root-directory-in-one-command#comment9747528_957978
+	exec    = "!exec "
+
 	visual  = !gitk.cmd
 [push]
 	default = simple
