@@ -288,3 +288,6 @@ command! Adoc :silent execute '!asciidoc %' | redraw!
 command! PrettyJson %!python -m json.tool
 
 command! R :silent :source ~/.vimrc
+
+" Force save files as root
+cmap w!! w !sudo tee > /dev/null %
