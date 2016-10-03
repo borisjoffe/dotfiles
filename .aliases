@@ -185,6 +185,7 @@ ealias downloadPdfsOnPage='wget -nH -r -l 1 -H -A pdf'
 ealias ytf='youtube-dl -F'
 ealias ytd='youtube-dl'
 ealias yt='youtube-dl -f webm'
+ealias ytw='youtube-dl -f worst'
 ealias ytlsub='youtube-dl --list-subs'
 ealias ytsub='youtube-dl --ignore-config --skip-download --write-auto-sub --sub-lang en'
 
