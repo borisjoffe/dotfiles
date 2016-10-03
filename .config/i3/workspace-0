@@ -7,9 +7,15 @@ include two-tabbed-vertical-panes
 split vertical
 exec urxvt
 
+# units don't work - just do it 3 times instead
+resize grow up
+resize grow up
+resize grow up
+
+
 split horizontal
 exec urxvt
 layout tabbed
 
 focus right
-resize grow left 30px
+resize grow left
