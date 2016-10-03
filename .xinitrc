@@ -59,7 +59,7 @@ fi
 . $HOME/bin/solarized-switch.sh $SOLARIZED
 #fish -c "source $HOME/bin/solarized-switch.sh $SOLARIZED"
 . $HOME/bin/keyboard-init.sh &
-#. $HOME/bin/keychain-init.sh &   # breaks X?
+#. $HOME/bin/keychain-init.sh &   # breaks X? - sourced in .shellrc
 . $HOME/bin/xautolock-init.sh &
 
 #lxpanel &
