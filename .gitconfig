@@ -16,7 +16,7 @@
 	comm    = commit
 	ci      = commit
 	cia     = commit --amend
-	d       = diff
+	d       = diff --color-words
 	ds      = diff --stat
 	dc    	= diff --cached
 	dcs   	= diff --cached --stat
