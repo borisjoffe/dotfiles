@@ -18,7 +18,7 @@
 	cia     = commit --amend
 	d       = diff --color-words
 	ds      = diff --stat
-	dc    	= diff --cached
+	dc    	= diff --cached --color-words
 	dcs   	= diff --cached --stat
 	dcns    = diff --cached --name-status
 	dns     = diff --name-status
