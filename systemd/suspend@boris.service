@@ -11,7 +11,7 @@ Type=simple
 Environment=DISPLAY=:0
 #ExecStartPre= -/usr/bin/pkill -u %u unison ; /usr/local/bin/music.sh stop ; /usr/bin/mysql -e 'slave stop'
 ExecStart=/usr/bin/xautolock -locknow
-ExecStartPost=/usr/bin/sleep 1
+ExecStartPost=/usr/bin/sleep 2
 
 [Install]
 WantedBy=sleep.target
