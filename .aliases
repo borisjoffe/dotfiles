@@ -41,7 +41,7 @@ alias grep2i='\grep --color=always -d skip -i'
 
 ealias df='\df -h'
 ealias dus='du -chs'
-ealias du1s='du -chd1 | sort -h'
+ealias du1s='du -achd1 | sort -h'
 ealias free='\free -h'
 ealias ps='\ps aux'
 #ealias psg='ps aux| grep -i'
