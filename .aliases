@@ -204,11 +204,16 @@ ealias zctime='find ~/zim/**/*.txt -ctime'
 ealias zmmin='find ~/zim/**/*.txt -mmin'
 ealias zcmin='find ~/zim/**/*.txt -cmin'
 
-ealias agj='ag --js'
-ealias agh='ag --html'
-ealias agjh='ag --js --html'
-ealias agfe='ag --js --html --css'
+ealias agj='ag --js --coffee'
+ealias agh='ag --html --jade'
+ealias ags='ag --css --stylus --sass --less'
+alias agjh='ag --js --coffee --html --jade'
+alias aghs='ag --html --jade --css --stylus --sass --less'
+alias agfe='ag --js --coffee --html --jade --css --stylus --sass --less'
 ealias agpy='ag --py'
+
+ealias jq.='jq "."'
+ealias jq0='jq ".[0]"'
 
 # GUI programs
 #ealias bitcoin-qt='bitcoin-qt -datadir=/data/bitcoin'
