@@ -119,6 +119,12 @@ stty -ixon
 
 #source ~/bin/resty
 
+
+source-if-exists .shell/proxy.sh
+# for 'hotel' package
+# proxy_on 127.0.0.1:2000
+
+
 # OPAM configuration
 if [ $ZSH_NAME ]; then
 	. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

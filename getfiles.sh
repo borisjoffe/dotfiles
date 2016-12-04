@@ -17,6 +17,7 @@ dotfiles=(
 	.vimrc
 	.zsh*
 	.*.zsh
+	.shell/
 	.tmux*.conf
 	.xbindkeysrc*
 	.Xresources*

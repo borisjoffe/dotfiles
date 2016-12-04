@@ -85,7 +85,7 @@ source-if-exists /usr/bin/aws_zsh_completer.sh
 # See: try https://github.com/tarruda/zsh-autosuggestions
 # colors - http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Character-Highlighting
 # black, red, green, yellow, blue, magenta, cyan and white
-source-if-exists ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source-if-exists ~/.shell/lib/zsh-autosuggestions/zsh-autosuggestions.zsh
 if [ `tty` =~ '/dev/tty' ]; then
 	# can only use one of the 8 base colors in a virtual console
 	export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=magenta'
@@ -93,7 +93,7 @@ else
 	export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=11'
 fi
 
-source-if-exists ~/bin/zsh-autoenv/autoenv.zsh
+source-if-exists ~/.shell/lib/zsh-autoenv/autoenv.zsh
 
 
 # Client environments
