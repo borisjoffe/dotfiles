@@ -343,6 +343,7 @@ if [ $ZSH_NAME ]; then
 
 	hash -d dot=~/dev/dotfiles
 	hash -d src=/data/src
+	hash -d docs=/data/docs
 	hash -d bin=~/bin
 	hash -d vpl=~/.vim/bundle
 
