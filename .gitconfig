@@ -12,11 +12,24 @@
 	tool = vimdiff
 [alias]
 	h       = help
+
 	a       = add -p
+	lsfc    = !git ls-files -dmo --exclude-standard
+	ajs     = add -p *js
+	ahtml   = add -p *html
+	acss    = add -p *css
+	apy     = add -p *py
+
 	comm    = commit
 	ci      = commit
 	cia     = commit --amend
+
 	d       = diff --color-words
+	djs     = diff --color-words *js
+	dhtml   = diff --color-words *html
+	dcss    = diff --color-words *css
+	dpy     = diff --color-words *py
+
 	ds      = diff --stat
 	dc    	= diff --cached --color-words
 	dcs   	= diff --cached --stat

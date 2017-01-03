@@ -82,7 +82,15 @@ ealias gss='git status --short'
 ealias gssu='git status --short -uno'
 ealias gcim='git commit -m'
 ealias gcia='git commit --amend'
+
 ealias ga='git add -p'
+ealias gaj="git add -p '*js'"
+ealias gah="git add -p '*html'"
+ealias gacss="git add -p '*css'"
+ealias gap="git add -p '*py'"
+# http://stackoverflow.com/questions/2855140/recursively-add-files-by-pattern
+#alias gafe="git ls-files -dmo --exclude-standard | grep -E '\\.(js|coffee|html|jade|css|styl|scss|less)$' | xargs git add -p"
+
 ealias gadd='git add'
 ealias gmv='git mv'
 ealias grm='git rm'
@@ -98,7 +106,13 @@ ealias glgns='git lg --name-status'
 ealias glga='git lga'
 ealias glgans='git lga --name-status'
 ealias gsh='git show'
+
 ealias gd='git diff --color-words'
+ealias gdj="git diff --color-words '*js'"
+ealias gdh="git diff --color-words '*html'"
+ealias gdcss="git diff --color-words '*css'"
+ealias gdpy="git diff --color-words '*py'"
+
 ealias gds='git diff --stat'
 ealias gdc='git diff --cached --color-words'
 ealias gdcs='git diff --cached --stat'
