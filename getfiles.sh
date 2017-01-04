@@ -57,6 +57,8 @@ for dotfile in $dotfiles; do
 	cp -u --parents -R $dotfile $SCRIPT_DIR
 done;
 
+cp -u /etc/systemd/system/suspend@boris.service dev/dotfiles/systemd/
+
 #cp -u --parents .config/openbox/rc.xml $SCRIPT_DIR
 #cp -u --parents .config/flake8 $SCRIPT_DIR
 #cp -u --parents .config/redshift.conf $SCRIPT_DIR
