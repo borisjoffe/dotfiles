@@ -181,6 +181,8 @@ ealias wscan='connmanctl scan wifi'
 ealias wst='connmanctl state'
 ealias wtech='connmanctl technologies'
 
+ealias router='cat ~/.config/create_ap.conf | sudo create_ap -w2 --no-virt wlan0 eth0 --dhcp-dns 8.8.8.8 --daemon'
+
 ealias pacman='pacmatic'
 ealias pacmann='sudo pacmatic --needed'
 ealias pacaurn='pacaur --needed'
