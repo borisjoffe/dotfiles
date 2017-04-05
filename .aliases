@@ -222,10 +222,14 @@ ealias lma='lastmod.sh -A'
 ealias rdp1='rdesktop -g 1280x800' # laptop screen
 ealias rdp='rdesktop -g 1280x1024' # external monitor
 
-ealias zmtime='find ~/zim/**/*.txt -mtime'
-ealias zctime='find ~/zim/**/*.txt -ctime'
-ealias zmmin='find ~/zim/**/*.txt -mmin'
-ealias zcmin='find ~/zim/**/*.txt -cmin'
+# shellcheck disable=SC2016
+ealias zmtime='(cd $HOME && find zim/**/*.txt -mtime'
+# shellcheck disable=SC2016
+ealias zctime='(cd $HOME && find zim/**/*.txt -ctime'
+# shellcheck disable=SC2016
+ealias zmmin='(cd $HOME && find zim/**/*.txt -mmin'
+# shellcheck disable=SC2016
+ealias zcmin='(cd $HOME && find zim/**/*.txt -cmin'
 
 ealias agj='ag --js --coffee'
 ealias agh='ag --html --jade'
