@@ -143,8 +143,10 @@ ealias gt='git tag'
 ealias gtl='git tag -l'
 ealias groot='git rev-parse --show-toplevel'
 ealias gex='git exec'  # execute command at top level of git directory
-ealias gexcl="echo $(groot)/.git/info/exclude"
-ealias gcexcl="cat $(groot)/.git/info/exclude"
+# shellcheck disable=SC2016
+alias gexcl='echo $(groot)/.git/info/exclude'
+# shellcheck disable=SC2016
+alias gcexcl='cat $(groot)/.git/info/exclude'
 
 ealias t='tmux'
 ealias tls='tmux ls'
