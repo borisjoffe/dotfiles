@@ -69,7 +69,21 @@ setopt prompt_subst
 #export PS1=$'\e[0;96m[\e[0m\e[0;1m'$(pwd)$':'$(uname -n)$'\e[0m '
 BLUE="%{$(tput setaf 166)%}"
 RESET="%{$(tput sgr0)%}"
-export PS1="%{$fg_bold[cyan]%}%~ %%%{$reset_color%} "
+
+# add user/machine info if they're not the defaults
+DEFAULT_USER=boris
+DEFAULT_MACHINE=fireball
+machine=$(uname -n)
+extra_prompt_context=""
+
+if [[ $USER != $DEFAULT_USER ]]; then
+	extra_prompt_context=$USER
+fi
+if [[ "$machine" != $DEFAULT_MACHINE ]]; then
+	extra_prompt_context+="@$machine"
+fi
+
+export PS1="%{$fg_bold[cyan]%}${extra_prompt_context} %~ %%%{$reset_color%} "
 export RPS1='%{$fg[yellow]%}$(__prompt_git) %{$reset_color%}%*'
 
 #export PS1=$'\e[0;96m%~ %M%%\e[0m '
