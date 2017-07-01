@@ -64,6 +64,8 @@
 	stl     = stash list
 	pop     = stash pop
 
+	bakbr   = !git-backup-branch
+
 	inc     = !git fetch && git log ..FETCH_HEAD
 	out     = !git fetch && git log FETCH_HEAD..
 

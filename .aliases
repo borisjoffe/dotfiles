@@ -154,6 +154,7 @@ ealias gex='git exec'  # execute command at top level of git directory
 alias gexcl='echo $(groot)/.git/info/exclude'
 # shellcheck disable=SC2016
 alias gcexcl='cat $(groot)/.git/info/exclude'
+ealias gbakbr='git bakbr'
 
 ealias t='tmux'
 ealias tls='tmux ls'
