@@ -34,9 +34,14 @@ indent_style = space
 indent_style = space
 indent_size = 2
 
-[*.{html,jade}]
+[*.html]
 indent_style = tab
 indent_size = 4
+
+[*.jade]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = false
 
 [*.{css,sass,less,styl,stylus}]
 indent_style = tab
