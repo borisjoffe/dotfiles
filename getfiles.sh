@@ -23,7 +23,7 @@ dotfiles=(
 	.Xresources*
 	.xinitrc
 	.tidyrc
-	.editorconfig
+	.*editorconfig
 	.jshintrc
 	.eslintrc
 	.gitconfig
@@ -37,6 +37,7 @@ dotfiles=(
 	.tmuxp
 	.noderc.js
 	.gtkrc-2.0*
+	.rsyncignore
 
 	.config/fish/{functions/,}*.fish
 	.config/openbox/rc.xml
