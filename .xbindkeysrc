@@ -8,23 +8,23 @@
 # The pound(#) symbol may be used anywhere for comments.
 #
 # A list of keys is in /usr/include/X11/keysym.h and in
-# /usr/include/X11/keysymdef.h
-# The XK_ is not needed.
+# /usr/include/X11/keysymdef.h 
+# The XK_ is not needed. 
 #
-# List of modifier (on my keyboard):
-#   Control, Shift, Mod1 (Alt), Mod2 (NumLock),
-#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
+# List of modifier (on my keyboard): 
+#   Control, Shift, Mod1 (Alt), Mod2 (NumLock), 
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll). 
 #
-# Another way to specifie a key is to use 'xev' and set the
-# keycode with c:nnn or the modifier with m:nnn where nnn is
-# the keycode or the state returned by xev
+# Another way to specifie a key is to use 'xev' and set the 
+# keycode with c:nnn or the modifier with m:nnn where nnn is 
+# the keycode or the state returned by xev 
 #
-# This file is created by xbindkey_config
-# The structure is :
-# # Remark
-# "command"
-# m:xxx + c:xxx
-# Shift+...
+# This file is created by xbindkey_config 
+# The structure is : 
+# # Remark 
+# "command" 
+# m:xxx + c:xxx 
+# Shift+... 
 
 
 
@@ -38,47 +38,52 @@
 #Lock Screen
 "locknow.sh"
     m:0xc + c:33
-    Control+Alt + l
+    Control+Alt + l 
 
 #Suspend (with locking)
 "suspend.sh"
     m:0xc + c:47
-    Control+Alt + s
+    Control+Alt + s 
+
+#Hibernate
+"systemctl hibernate > ~/hibernate.log"
+    m:0xc + c:44
+    Control+Alt + h 
 
 #Mute volume
 "amixer -c 0 set Master toggle"
     m:0x0 + c:121
-    XF86AudioMute
+    XF86AudioMute 
 
 #Raise volume
 "amixer -c 0 set Master 5+"
     m:0x0 + c:123
-    XF86AudioRaiseVolume
+    XF86AudioRaiseVolume 
 
 #Lower volume
 "amixer -c 0 set Master 5-"
     m:0x0 + c:122
-    XF86AudioLowerVolume
+    XF86AudioLowerVolume 
 
 #Screenshot Full Screen (Multimonitor)
-"redshift -x; cd ~; scrot --multidisp; notify.sh "Desktop screenshot successful""
+"redshift -x; cd ~; scrot --multidisp; notify.sh "Desktop screenshot successful"; nohup redshift"
     m:0x0 + c:107
-    Print
+    Print 
 
 #Screenshot - Select region
-"redshift -x; pkill redshift; cd ~; TIMEOUT=1000 notify.sh "Select a region"; scrot --select; notify.sh "Selection screenshot successful"; nohup redshift -o"
+"pkill -9 redshift; cd ~; TIMEOUT=500 notify.sh "Select a region"; scrot --select; notify.sh "Selection screenshot successful"; nohup redshift"
     m:0x1 + c:107
-    Shift + Print
+    Shift + Print 
 
 #Screenshot focused window
-"redshift -x; cd ~; scrot --focused; notify.sh "Window screenshot successful""
+"redshift -x; cd ~; scrot --focused; notify.sh "Window screenshot successful"; nohup redshift"
     m:0x8 + c:107
-    Alt + Print
+    Alt + Print 
 
 #Text Expander
 "text-expand"
     m:0x0 + c:69
-    F3
+    F3 
 
 #
 # End of xbindkeys configuration
