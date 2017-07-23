@@ -233,14 +233,15 @@ ealias ec2i="aws ec2 describe-instances | jq '.Reservations[].Instances[] | {Ins
 ealias rdp1='rdesktop -g 1280x800' # laptop screen
 ealias rdp='rdesktop -g 1280x1024' # external monitor
 
+# add semicolon at end to avoid second process substitution from being evaluated prematurely
 # shellcheck disable=SC2016
-ealias zmtime='(cd $HOME && find zim/**/*.txt -mtime'
+ealias zmtime='comm -12 <(git diff --name-only | sort) <(cd $HOME && find zim/**/*.txt -mtime -7 | sort);'
 # shellcheck disable=SC2016
-ealias zctime='(cd $HOME && find zim/**/*.txt -ctime'
+ealias zctime='comm -12 <(git diff --name-only | sort) <(cd $HOME && find zim/**/*.txt -ctime -7 | sort);'
 # shellcheck disable=SC2016
-ealias zmmin='(cd $HOME && find zim/**/*.txt -mmin'
+ealias zmmin='comm -12 <(git diff --name-only | sort) <(cd $HOME && find zim/**/*.txt -mmin -7 | sort);'
 # shellcheck disable=SC2016
-ealias zcmin='(cd $HOME && find zim/**/*.txt -cmin'
+ealias zcmin='comm -12 <(git diff --name-only | sort) <(cd $HOME && find zim/**/*.txt -cmin -7 | sort);'
 
 ealias agj='ag --js --coffee'
 ealias agh='ag --html --jade'
