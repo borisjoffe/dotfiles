@@ -171,6 +171,9 @@ au FileType tsv setlocal ts=13 sw=13 sts=13 nowrap  " nicer tsv columns
 " Abbreviations
 
 "" Abbreviations:JS
+iabbr ctr console.trace(
+iabbr cdb console.debug(
+iabbr cin console.info(
 iabbr cl console.log(
 iabbr cla console.log('ARGUMENTS:', arguments)
 iabbr clt console.log('THIS:', this)
@@ -199,7 +202,9 @@ iabbr rco const co = require('co')
 iabbr us; 'use strict'
 iabbr me= module.exports = () => {return {}}
 iabbr fn function () {}
+iabbr fnd function (d) {return d;}
 iabbr fn) function () {})
+iabbr fnd) function (d) {return d;})
 iabbr f( function (
 inoreabbr f* function* () {}
 inoreabbr f*( function* (
