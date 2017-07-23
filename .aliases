@@ -225,7 +225,10 @@ alias ffprobe='\ffprobe -hide_banner'
 ealias lm='lastmod.sh'
 ealias lma='lastmod.sh -A'
 
+ealias rsync='rsync.sh'
 #ealias filesize='stat -c%s'
+
+ealias ec2i="aws ec2 describe-instances | jq '.Reservations[].Instances[] | {InstanceId, State, PublicIpAddress, PublicDnsName}'"
 
 ealias rdp1='rdesktop -g 1280x800' # laptop screen
 ealias rdp='rdesktop -g 1280x1024' # external monitor
