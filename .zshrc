@@ -113,6 +113,8 @@ source-if-exists ~/.shell/lib/zsh-autoenv/autoenv.zsh
 
 
 # Client environments
+if [ -d ~/c ]; then
 for f in ~/c/*/env; do
 	source-if-exists "$f"
 done
+fi
