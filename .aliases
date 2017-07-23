@@ -40,6 +40,7 @@ alias grep2='\grep --color=always -d skip'
 alias grep2i='\grep --color=always -d skip -i'
 
 ealias df='\df -h'
+ealias dfi='\df -hi'
 ealias dus='du -chs'
 ealias du1s='du -achd1 | sort -h'
 ealias free='\free -h'
