@@ -8,6 +8,9 @@ charset = utf-8
 end_of_line = lf
 trim_trailing_whitespace = true
 
+[.xbindkeysrc]
+trim_trailing_whitespace = false
+
 [*.{md,diff}]
 trim_trailing_whitespace = false
 
