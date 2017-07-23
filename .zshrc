@@ -35,6 +35,8 @@ bindkey "^[[1~" beginning-of-line # tmux
 bindkey "^[[8~" end-of-line
 bindkey "^[[4~" end-of-line # tmux
 
+bindkey '^U' backward-kill-line  # instead of deleting the whole line
+
 function source-if-exists() {
 	local f=${1?source-if-exists requires an argument}
 	[ -n "$DBG" ] && echo "source-if-exists: $f"
