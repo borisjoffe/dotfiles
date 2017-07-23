@@ -73,6 +73,9 @@
 	# http://stackoverflow.com/questions/957928/is-there-a-way-to-get-the-git-root-directory-in-one-command#comment9747528_957978
 	exec    = "!exec "
 
+	# http://blog.beanstalkapp.com/post/143216181984
+	recent-branches = for-each-ref –sort=’-authordate:iso8601’ –format=’ %(authordate:iso8601)%09%(refname)’ refs/heads
+
 	visual  = !gitk.cmd
 [push]
 	default = simple
