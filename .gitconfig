@@ -31,15 +31,15 @@
 	dpy     = diff --color-words *py
 
 	ds      = diff --stat
-	dc    	= diff --cached --color-words
-	dcs   	= diff --cached --stat
+	dc      = diff --cached --color-words
+	dcs     = diff --cached --stat
 	dcns    = diff --cached --name-status
 	dns     = diff --name-status
 	sh      = show
 	stat    = status
 	s       = status
 	ss      = status --short
-	f    	= fetch --tags
+	f       = fetch --tags
 	br      = branch
 	cbr     = rev-parse --abbrev-ref HEAD
 	co      = checkout
@@ -66,6 +66,7 @@
 
 	bakbr   = !git-backup-branch
 
+	# hg equivalents
 	inc     = !git fetch && git log ..FETCH_HEAD
 	out     = !git fetch && git log FETCH_HEAD..
 
