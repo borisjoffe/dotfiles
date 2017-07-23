@@ -1,9 +1,16 @@
 [NotebookList]
-Default=
+Default=~/zim
 1=~/zim
+2=~/journal
 
 [Notebook 1]
 uri=~/zim
 name=main
+interwiki=None
+icon=None
+
+[Notebook 2]
+uri=~/journal
+name=journal
 interwiki=None
 icon=None
