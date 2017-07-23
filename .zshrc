@@ -102,7 +102,7 @@ source-if-exists /usr/bin/aws_zsh_completer.sh
 # colors - http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Character-Highlighting
 # black, red, green, yellow, blue, magenta, cyan and white
 source-if-exists ~/.shell/lib/zsh-autosuggestions/zsh-autosuggestions.zsh
-if [ `tty` =~ '/dev/tty' ]; then
+if [[ `tty` =~ '/dev/tty' ]]; then
 	# can only use one of the 8 base colors in a virtual console
 	export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=magenta'
 else
