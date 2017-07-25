@@ -13,7 +13,7 @@ encrypt () {
 	gpg -ac --no-options "$1"
 }
 
-crypt () {
+decrypt () {
 	gpg --no-options "$1"
 }
 
