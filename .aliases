@@ -256,6 +256,7 @@ alias agjh='ag --js --coffee --html --jade'
 alias aghs='ag --html --jade --css --stylus --sass --less'
 alias agfe='ag --js --coffee --html --jade --css --stylus --sass --less'
 ealias agpy='ag --py'
+ealias agtodo='ag "TODO|FIXME|REMOVE"'
 
 ealias jq.='jq "."'
 ealias jq0='jq ".[0]"'
