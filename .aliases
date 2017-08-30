@@ -210,7 +210,7 @@ ealias pacsi='pacmatic -Si'
 ealias pacr='pacmatic -Rs'
 
 ealias sudo='sudo ' # hack to make aliases work - http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo/22043#22043
-ealias trash='gvfs-trash'
+ealias trash='gio trash'
 ealias trash-list="ls $HOME/.local/share/Trash/files"
 
 
