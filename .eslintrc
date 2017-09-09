@@ -2,7 +2,8 @@
     "globals": {
         "_"     : true,
         "$"     : true,
-        "React" : true
+        "React" : true,
+        "angular" : true,
     },
     "rules": {
         "comma-dangle": [0, "always-multiline"],
@@ -11,7 +12,9 @@
         "quotes": [1, "single"],
         "linebreak-style": [2, "unix"],
         "no-mixed-spaces-and-tabs": [2, "smart-tabs"],
-        "semi": [2, "always"]
+        "semi": [1, "always"],
+        "no-unused-vars": 0,
+        "no-console": 0,
     },
     "env": {
         "es6": true,
@@ -19,12 +22,16 @@
         "node": true
     },
     "extends": "eslint:recommended",
-    "ecmaFeatures": {
-        "arrowFunctions": true,
-        "destructuring": true,
-        "jsx": true,
-        "modules": true,
-        "experimentalObjectRestSpread": true
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "arrowFunctions": true,
+          "destructuring": true,
+          "jsx": true,
+          "modules": true,
+          "experimentalObjectRestSpread": true
+      },
     },
     "plugins": [
         "react"
