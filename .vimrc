@@ -33,7 +33,7 @@ set wildmenu
 set encoding=utf-8
 
 " JSHint uses the SpellBad colors for errors which makes the text invisible
-hi SpellBad	term=bold ctermbg=Red ctermfg=Green guibg=Red guifg=White
+" hi SpellBad	term=bold ctermbg=Red ctermfg=Green guibg=Red guifg=White
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
