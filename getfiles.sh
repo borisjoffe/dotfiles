@@ -25,7 +25,7 @@ dotfiles=(
 	.tidyrc
 	.*editorconfig
 	.jshintrc
-	.eslintrc
+	.eslintrc*
 	.gitconfig
 	.gitignore.global
 	.ackrc

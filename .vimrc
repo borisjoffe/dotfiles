@@ -115,8 +115,10 @@ let g:syntastic_check_on_wq = 0
 "let g:syntastic_javascript_checkers = ['eslint']
 "let g:syntastic_javascript_jsxhint_exec = 'eslint'
 let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_jshint_args = '--verbose'
 "let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 " let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
+let g:syntastic_javascript_eslint_args = '--no-ignore'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:vim_json_syntax_conceal = 0
 
@@ -152,8 +154,8 @@ set listchars=tab:——       ",space:·eol:⏎,nbsp:?
 
 " ==== FILE TYPE SPECIFIC BEHAVIOR ====
 
-autocmd BufRead,BufNewFile *.es6\|*.jsx\|*.ts setfiletype javascript
-autocmd BufRead,BufNewFile .jshintrc\|.eslintrc\|.babelrc  setfiletype json
+autocmd BufRead,BufNewFile *.es6\|*.jsx\|*.ts\|.eslintrc setfiletype javascript
+autocmd BufRead,BufNewFile .jshintrc\|.babelrc  setfiletype json
 autocmd BufRead,BufNewFile *.adoc\|*.ad\|*.asciidoc setfiletype asciidoc
 autocmd BufRead,BufNewFile *.md\|*.markdown setlocal filetype=ghmarkdown
 autocmd BufRead,BufNewFile .shellrc\|*.aliases setfiletype sh
