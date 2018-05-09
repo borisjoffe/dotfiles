@@ -77,5 +77,11 @@
 	recent-branches = for-each-ref –sort=’-authordate:iso8601’ –format=’ %(authordate:iso8601)%09%(refname)’ refs/heads
 
 	visual  = !gitk.cmd
+
+	au      = git update-index --assume-unchanged
+	aun     = git update-index --no-assume-unchanged
+	aus     = git ls-files -v | grep "^[[:lower:]]"
+
+
 [push]
 	default = simple
