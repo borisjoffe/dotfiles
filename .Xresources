@@ -7,8 +7,9 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 URxvt*termName: 	rxvt-unicode
-URxvt*font:		 	xft:Inconsolata:size=11:antialias=true \
-					xft:DejaVuSansMono:size=10:antialias=true \
+! BUG (as of 2017-09 wk5 after restart) - inconsolata font does not load properly
+URxvt*font:		 	xft:Inconsolata:size=11:antialias=true, \
+					xft:DejaVuSansMono:size=10:antialias=true, \
 					xft:FreeSerif:style=Regular, \
 					xft:unifont:style=Medium:antialias=false
 URxvt.letterSpace: 	-1
