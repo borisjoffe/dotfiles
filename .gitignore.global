@@ -20,8 +20,10 @@ env
 # Dev specific
 *.pyc
 node_modules/
+node_modules*gz
 npm-debug.log.*
 Gemfile.lock
+yarn.lock
 
 # Revisions
 patch/
