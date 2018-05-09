@@ -99,7 +99,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+apostrophe focus child
 
 # switch to workspace
 bindsym $mod2+1 workspace 1
@@ -121,12 +121,74 @@ bindsym $mod2+Shift+4 move container to workspace 4
 bindsym $mod2+Shift+5 move container to workspace 5
 bindsym $mod2+Shift+6 move container to workspace 6
 bindsym $mod2+Shift+7 move container to workspace 7
+bindsym $mod2+Shift+8 move container to workspace 8
 bindsym $mod2+Shift+asterisk move container to workspace 8
 bindsym $mod2+Shift+9 move container to workspace 9
 bindsym $mod2+Shift+0 move container to workspace 10
 
 # toggle workspace
 workspace_auto_back_and_forth yes
+
+
+# from http://www.slackword.net/?p=657
+bindsym $mod2+z workspace back_and_forth
+bindsym $mod2+Shift+z move container to workspace back_and_forth
+
+bindsym $mod+Shift+z [instance="zim"] focus
+bindsym $mod+Shift+c [instance="chromium"] focus
+bindsym $mod+Shift+t [title="Tabs Outliner"] focus
+bindsym $mod+Shift+x [class="X2GoAgent"] focus
+
+# keybindings for marking and jumping to clients
+bindsym $mod2+m exec i3-input -F 'mark %s' -P 'Mark name: '
+bindsym $mod2+Shift+m exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '
+
+mode "focused" {
+
+	# hardcoded focus keybindings
+	# bindsym b [class="(?i)firefox"] focus
+	# bindsym w [class="(?i)terminal" title="weechat"] focus
+	# bindsym m [class="(?i)thunderbird"] focus
+	# bindsym f [class="(?i)terminal" title="mc"] focus
+	# bindsym z [class="(?i)zathura"] focus
+
+	# bindsym a exec i3-input -F 'mark %s' -P 'Mark name: '
+	# bindsym g exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '
+
+	# Assign marks to keys 1-5
+	bindsym Shift+1 mark mark1
+	bindsym Shift+2 mark mark2
+	bindsym Shift+3 mark mark3
+	bindsym Shift+4 mark mark4
+	bindsym Shift+5 mark mark5
+	bindsym Shift+6 mark mark6
+	bindsym Shift+7 mark mark7
+	bindsym Shift+8 mark mark8
+	bindsym Shift+9 mark mark9
+	bindsym Shift+0 mark mark0
+
+	# Jump to clients marked 1-5
+	bindsym 1 [con_mark="mark1"] focus
+	bindsym 2 [con_mark="mark2"] focus
+	bindsym 3 [con_mark="mark3"] focus
+	bindsym 4 [con_mark="mark4"] focus
+	bindsym 5 [con_mark="mark5"] focus
+	bindsym 6 [con_mark="mark6"] focus
+	bindsym 7 [con_mark="mark7"] focus
+	bindsym 8 [con_mark="mark8"] focus
+	bindsym 9 [con_mark="mark9"] focus
+	bindsym 0 [con_mark="mark0"] focus
+
+	# Exit to the default mode
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+
+bindsym $mod2+f mode "focused"
+
+
+bindsym $mod+Tab focus parent; focus right
+bindsym $mod+Shift+Tab focus parent; focus left
 
 
 # draw vim-like marks on window decoration
