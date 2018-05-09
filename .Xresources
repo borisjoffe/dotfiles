@@ -8,7 +8,7 @@ Xft.rgba: rgb
 
 URxvt*termName: 	rxvt-unicode
 URxvt*font:		 	xft:Inconsolata:size=11:antialias=true \
-					xft:DejaVuSansMono:size=10:antialias=true
+					xft:DejaVuSansMono:size=10:antialias=true \
 					xft:FreeSerif:style=Regular, \
 					xft:unifont:style=Medium:antialias=false
 URxvt.letterSpace: 	-1
