@@ -15,6 +15,7 @@ ealias ll='ls -lh'
 ealias la='ls -A'
 ealias lla='ls -lhA'
 ealias l='ls -CF'
+ealias cd.='cd .'
 ealias ..='cd ..'
 ealias 1='cd ..'
 ealias ...='cd ../..'
@@ -194,7 +195,8 @@ ealias wscan='connmanctl scan wifi'
 ealias wst='connmanctl state'
 ealias wtech='connmanctl technologies'
 
-ealias router='cat ~/.config/create_ap.conf | sudo create_ap -w2 --no-virt wlan0 eth0 --dhcp-dns 8.8.8.8 --daemon'
+ealias router='cat ~/.config/create_ap.conf | sudo create_ap -w2 --no-virt wlan0 eth0 --dhcp-dns 8.8.8.8'
+ealias router2='cat ~/.config/create_ap.conf | sudo create_ap -w2 --no-virt wlan0 eth0 --dhcp-dns 8.8.8.8 --daemon'
 
 ealias pacman='pacmatic'
 ealias pacmann='sudo pacmatic --needed'
@@ -238,6 +240,7 @@ ealias ec2i="aws ec2 describe-instances | jq '.Reservations[].Instances[] | {Ins
 
 ealias rdp1='rdesktop -g 1280x800' # laptop screen
 ealias rdp='rdesktop -g 1280x1024' # external monitor
+ealias vnc='vncviewer 54.70.180.110:5901 -DesktopSize=1280x800 --geometry=1280x800 -FullScreenAllMonitors=0'
 
 # add semicolon at end to avoid second process substitution from being evaluated prematurely
 # shellcheck disable=SC2016
@@ -256,7 +259,7 @@ alias agjh='ag --js --coffee --html --jade'
 alias aghs='ag --html --jade --css --stylus --sass --less'
 alias agfe='ag --js --coffee --html --jade --css --stylus --sass --less'
 ealias agpy='ag --py'
-ealias agtodo='ag "TODO|FIXME|REMOVE"'
+ealias agtodo='ag "TODO|FIXME|REMOVE|boris"'
 
 ealias jq.='jq "."'
 ealias jq0='jq ".[0]"'
