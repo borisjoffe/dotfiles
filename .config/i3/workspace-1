@@ -1,6 +1,32 @@
 include two-tabbed-vertical-panes
 
-focus child
+# Old layout
+#focus child
 
 # FIXME: px args don't seem to have any effect
-resize grow right
+#resize grow right
+
+
+# ===== New layout =====
+
+# switch to right parent
+focus right
+focus parent
+
+# bottom right container
+split vertical
+exec urxvt
+
+# units don't work - just do it 3 times instead
+resize grow up
+resize grow up
+resize grow up
+
+
+split horizontal
+exec urxvt
+layout tabbed
+
+# focus right
+resize shrink left
+resize shrink left
