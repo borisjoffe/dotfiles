@@ -87,6 +87,9 @@
     "wsh"           : false,    // Windows Scripting Host
     "yui"           : false,    // Yahoo User Interface
 
+    // Disable warnings
+    "-W094"         : true,     // unexpected comma warning
+
     // Custom Globals
     "globals"       : { // additional predefined global variables
         "self"      : true
